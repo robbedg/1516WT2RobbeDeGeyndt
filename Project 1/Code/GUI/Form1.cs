@@ -120,6 +120,14 @@ namespace GUI
             // bol pad
             circle.X = (int)(500 - (v * time));
 
+            //Check collision
+            ICollision collision = new Collision();
+            if (collision.CheckCollision((Circle)circle, (Shapes.Rectangle)rectangle))
+            {
+                timer.Enabled = false;
+                circle.X = (rectangle.X + (rectangle.width / 2)) + circle.radius;
+            }
+
             //Draw circle
             System.Drawing.Rectangle boundingBox = new System.Drawing.Rectangle(new Point(circle.X - circle.radius, circle.Y), new Size(circle.radius * 2, circle.radius * 2));
             screen.FillEllipse(new SolidBrush(Color.Crimson), boundingBox);
@@ -131,14 +139,6 @@ namespace GUI
             // toon backbuffer op display
             output.DrawImage(backBuffer, new System.Drawing.Rectangle(0, 0, display.Width, display.Height), new System.Drawing.Rectangle(0, 0, display.Width, display.Height), GraphicsUnit.Pixel);
 
-            //Check collision
-            ICollision collision = new Collision();
-            if (collision.CheckCollision((Circle)circle, (Shapes.Rectangle)rectangle))
-            {
-                //if (test)
-                timer.Enabled = false;
-                time = 0;
-            }
             
             //TEMP
             if ( circle.X <= -500)

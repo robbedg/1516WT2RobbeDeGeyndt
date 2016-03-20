@@ -16,7 +16,6 @@ namespace Logic
             int test2 = rectangle.X + rectangle.width;
             if ((circle.X - circle.radius) <= (rectangle.X + (rectangle.width / 2)))
             {
-                circle.X = (rectangle.X + (rectangle.width / 2)) + circle.radius;
                 return true;
             }
             return false;
