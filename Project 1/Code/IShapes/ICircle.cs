@@ -8,6 +8,7 @@ namespace IShapes
 {
     public interface ICircle
     {
+        double mass { get; set; }
         int radius { get; set; }
         int X { get; set; }
         int Y { get; set; }

@@ -10,5 +10,6 @@ namespace ILogic
     public interface ICollision
     {
         bool CheckCollision(Circle circle, Shapes.Rectangle rectangle);
+        double ResultForce(double acceleration, double standardGravity, double angle, Circle circle, Shapes.Rectangle rectangle);
     }
 }

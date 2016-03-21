@@ -9,6 +9,9 @@ namespace Shapes
 {
     public class Rectangle : IRectangle
     {
+        public double mass { get; set; }
+        public double staticFriction { get; set; }
+        public double kineticFriction { get; set; }
         public int width { get; set; }
         public int height { get; set; }
         public int X { get; set; }
@@ -16,14 +19,20 @@ namespace Shapes
 
         public Rectangle()
         {
+            this.mass = 0;
+            this.staticFriction = 0;
+            this.kineticFriction = 0;
             this.width = 0;
             this.height = 0;
             this.X = 0;
             this.Y = 0;
         }
 
-        public Rectangle(int width, int height, int X, int Y)
+        public Rectangle(double mass, double staticFriction, double kineticFriction, int width, int height, int X, int Y)
         {
+            this.mass = mass;
+            this.staticFriction = staticFriction;
+            this.kineticFriction = kineticFriction;
             this.width = width;
             this.height = height;
             this.X = X;

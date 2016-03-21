@@ -33,10 +33,14 @@ namespace GUI
 
         double theta;                // in radialen;
         bool started = false;
-        double v;                    // speed
+        double vcircle;                    // speed
+        double acircle;                    // acceleration
 
-        ICircle circle = new Circle(20, 490, 0); //Circle
-        IRectangle rectangle = new Shapes.Rectangle(80, 40, -450, 0); //Rectangle
+        double vrectangle;
+        double arectangle;
+
+        ICircle circle = new Circle(10, 20, 500, 0); //Circle
+        IRectangle rectangle = new Shapes.Rectangle(5, 0.61, 0.47, 80, 40, -350, 0); //Rectangle
 
         public Form1()
         {
@@ -61,23 +65,34 @@ namespace GUI
             display.Invalidate(); // force redraw (& paint event);
         }
 
-
-
         #region game loop
 
         private void InitGame()
         {
-            theta = 5;
+            theta = 45;
             time = 0;
-            v = 0;
+
+            acircle = 0;
+            vcircle = 0;
+
+            arectangle = 0;
+            vrectangle = 0;
         }
-
-
 
         private void DoGame()
         {
             time += timer.Interval;
-            v = XMath.Acceleration(9.81, theta, 0) * (time / 100.0d);
+
+            acircle = XMath.Acceleration(9.81, theta, 0);
+            vcircle = acircle * (time / 100.0d);
+
+            double t = XMath.Acceleration(9.81, theta, rectangle.staticFriction);
+
+            if (XMath.Acceleration(9.81, theta, rectangle.staticFriction) > 0)
+            {
+                arectangle = XMath.Acceleration(9.81, theta, rectangle.kineticFriction);
+            }
+            vrectangle = arectangle * (time / 100.0d);
         }
 
         #endregion game loop
@@ -100,7 +115,6 @@ namespace GUI
             display.Paint += new PaintEventHandler(PaintDisplay);
         }
 
-
         private void PaintDisplay(object sender, PaintEventArgs e)
         {
             // On_Paint event handler voor display
@@ -114,11 +128,11 @@ namespace GUI
             // genereer scherminhoud hier
 
             //assen
-            screen.DrawLine(new Pen(Color.Blue), new Point(-500, 0), new Point(500, 0));
-
+            screen.DrawLine(new Pen(Color.Blue), new Point(-1000, 0), new Point(1000, 0));
 
             // bol pad
-            circle.X = (int)(500 - (v * time));
+            circle.X = (int)(500 - (vcircle * time));
+            rectangle.X = (int)(-350 - (vrectangle * time));
 
             //Check collision
             ICollision collision = new Collision();
@@ -126,6 +140,12 @@ namespace GUI
             {
                 timer.Enabled = false;
                 circle.X = (rectangle.X + (rectangle.width / 2)) + circle.radius;
+
+                if (collision.ResultForce(acircle, 9.81, theta, (Circle)circle, (Shapes.Rectangle)rectangle) <= 0)
+                {
+                    startButton_Click(new object(), new EventArgs());
+                    startButton.Enabled = false;
+                }
             }
 
             //Draw circle
@@ -141,20 +161,15 @@ namespace GUI
 
             
             //TEMP
-            if ( circle.X <= -500)
+            if ((circle.X <= -500) || (rectangle.X <= -500))
             {
-                
-                time = 0;
-                circle.X = 0;
-                timer.Enabled = false;
-                started = false;
-                startButton.Text = "Start";
+                startButton_Click(new object(), new EventArgs());
+                startButton.Enabled = false;
             }
             // display textboxes
             //tijdBox.Text = String.Format("{0:F}", time / 1000.0d);
             //thetaBox.Text = String.Format("{0:F}", v);
         }
-
 
         #endregion renderer
 
@@ -170,7 +185,7 @@ namespace GUI
             else
             {
                 timer.Enabled = true;
-                startButton.Text = "Stop";
+                startButton.Text = "Pause";
                 started = true;
             }
         }

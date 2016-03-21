@@ -8,6 +8,9 @@ namespace IShapes
 {
     public interface IRectangle
     {
+        double mass { get; set; }
+        double staticFriction { get; set; }
+        double kineticFriction { get; set; }
         int width { get; set; }
         int height { get; set; }
         int X { get; set; }
