@@ -80,10 +80,6 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Formulas\Formulas.csproj">
-      <Project>{0ab303be-7013-4efc-a316-3e364973dd40}</Project>
-      <Name>Formulas</Name>
-    </ProjectReference>
     <ProjectReference Include="..\ILogic\ILogic.csproj">
       <Project>{31a01829-c21c-47dd-b17c-9e952b171383}</Project>
       <Name>ILogic</Name>

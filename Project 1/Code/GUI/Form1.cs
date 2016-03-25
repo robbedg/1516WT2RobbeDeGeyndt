@@ -18,28 +18,28 @@ namespace GUI
     public partial class Form1 : Form
     {
 
-        // Timing
+        //Timing
 
         Timer timer;
 
-        // Globale variabelen voor GDI+
+        //Globale variabelen voor GDI+
         Graphics screen;
         Bitmap backBuffer;
         float SchaalX;
         float SchaalY;
 
-        // variabelen voor model
-        Int32 time;                        // in msec
+        //variabels for model
+        Int32 time;                        //in msec
 
-        double theta;                      // in degrees
-        double standgrav;                   // standard gravity
+        double theta;                      //in degrees
+        double standgrav;                  //standard gravity
 
-        bool started;                      // simulation running.
-        bool hasCollision;                 // collision happened
+        bool started;                      //simulation running.
+        bool hasCollision;                 //collision happened
 
-        ICollision collision;
+        ICalculations collision;
 
-        ICircle circle;                    // circle
+        ICircle circle;                    //Circle
         IRectangle rectangle;              //Rectangle
 
         public Form1()
@@ -55,61 +55,71 @@ namespace GUI
         private void InitTimer()
         {
             timer = new Timer();
-            timer.Interval = 10; // msec, f = 100 Hz;
+            timer.Interval = 10;            //msec, f = 100 Hz;
             timer.Tick += new EventHandler(timer_Tick);
         }
 
         private void timer_Tick(object sender, EventArgs e)
         {
             DoGame();
-            display.Invalidate(); // force redraw (& paint event);
+            display.Invalidate();           //force redraw (& paint event);
         }
 
         #region game loop
 
         private void InitGame()
         {
-            collision = new Collision();
+            //initialize collision
+            collision = new Calculations();
+            //initialize circle
             circle = new Circle((double)numericCircleMass.Value, 40, 480, 0);
+            //intialize rectangle
             rectangle = new Shapes.Rectangle((double)numericRectangleMass.Value, (double)numericStaticFriction.Value, (double)numericKineticFriction.Value, 160, 80, (480 - 120 - (int)numericDistance.Value), 0);
 
-            theta = (double)numericAngle.Value;
-            standgrav = (double)numericStandGrav.Value;
-            time = 0;
+            theta = (double)numericAngle.Value;                 //set angle
+            standgrav = (double)numericStandGrav.Value;         //set standard gravity
+            time = 0;                                           //set time
 
-            circle.acceleration = 0;
-            circle.speed = 0;
+            circle.acceleration = 0;                            //set acceleration circle
+            circle.speed = 0;                                   //set speed circle
 
-            rectangle.acceleration = 0;
-            rectangle.speed = 0;
+            rectangle.acceleration = 0;                         //set acceleration rectangle
+            rectangle.speed = 0;                                //set speed rectangle
 
-            started = false;
-            hasCollision = false;
+            started = false;                                    //set if started
+            hasCollision = false;                               //set if collided
         }
 
         private void DoGame()
         {
+            //timer
             time += timer.Interval;
 
+            //if collision happend
             if (hasCollision)
             {
-                rectangle.acceleration = collision.ResultForce(circle.acceleration, standgrav, theta, (Circle)circle, (Shapes.Rectangle)rectangle);
+                rectangle.acceleration = collision.ResultAcceleration(circle.acceleration, standgrav, theta, (Circle)circle, (Shapes.Rectangle)rectangle);
                 
                 circle.acceleration = rectangle.acceleration;
 
+                //acceleration 0;
                 if ((rectangle.acceleration <= 0)) rectangle.acceleration = 0;
+
+                //set values
                 rectangle.speed = rectangle.acceleration * (time / 1000.0d);
                 circle.speed = rectangle.speed;
             }
+            //before collision happened
             else
             {
-                circle.acceleration = XMath.Acceleration(standgrav, theta, 0);
+                circle.acceleration = collision.Acceleration(standgrav, theta, 0);
 
-                if (XMath.Acceleration(standgrav, theta, rectangle.staticFriction) > 0)
+                if (collision.Acceleration(standgrav, theta, rectangle.staticFriction) > 0)
                 {
-                    rectangle.acceleration = XMath.Acceleration(standgrav, theta, rectangle.kineticFriction);
+                    rectangle.acceleration = collision.Acceleration(standgrav, theta, rectangle.kineticFriction);
                 }
 
+                //set values
                 circle.speed = circle.acceleration * (time / 1000.0d);
                 rectangle.speed = rectangle.acceleration * (time / 1000.0d);
             }
@@ -123,44 +133,44 @@ namespace GUI
         {
             backBuffer = new Bitmap(display.Width, display.Height);
             screen = Graphics.FromImage(backBuffer);
-            // transformatie voor display met oorsprong in midden, breedte en hoogte van 1000m, rechtshandig assenstelsel
+            //transformation, set coordinate system
             SchaalX = display.Width / 1000.0f;
             SchaalY = display.Height / 1000.0f;
             screen.ResetTransform();
-            screen.ScaleTransform(SchaalX, -SchaalY); //schaling
-            screen.TranslateTransform(display.Width / (SchaalX * 2f), -display.Height / (SchaalY * 2f)); // oorsprong in centrum
-            //ROTATION
+            screen.ScaleTransform(SchaalX, -SchaalY); //scaling
+            screen.TranslateTransform(display.Width / (SchaalX * 2f), -display.Height / (SchaalY * 2f)); //set middel
+            //set rotation
             screen.RotateTransform((float)theta);
-            // trigger Render voor elke refresh van display;
+            //render with each display refresh
             display.Paint += new PaintEventHandler(PaintDisplay);
         }
 
         private void PaintDisplay(object sender, PaintEventArgs e)
         {
-            // On_Paint event handler voor display
+            //On_Paint event handler for display
             Render(e.Graphics);
         }
 
+        //Generate objects on screen.
         private void Render(Graphics output)
         {
             screen.Clear(Color.White);
 
-            // genereer scherminhoud hier
-
-            //assen
+            //draw line
             screen.DrawLine(new Pen(Color.Blue), new Point(-1000, 0), new Point(1000, 0));
 
-            // bol pad
+            //X-coordinate circle and rectangle
             circle.X -= (int)((circle.speed * 0.010) * (double)numericPPM.Value);
             rectangle.X -= (int)((rectangle.speed * 0.010) * (double)numericPPM.Value);
 
             //Check collision
-            
             if (collision.CheckCollision((Circle)circle, (Shapes.Rectangle)rectangle))
             {
+                //set X correct.
                 circle.X = (rectangle.X + (rectangle.width / 2)) + circle.radius;
 
-                if (collision.ResultForce(circle.acceleration, standgrav, theta, (Circle)circle, (Shapes.Rectangle)rectangle) <= 0)
+                //stop when v=0
+                if (collision.ResultAcceleration(circle.acceleration, standgrav, theta, (Circle)circle, (Shapes.Rectangle)rectangle) <= 0)
                 {
                     stop();
                     startButton.Enabled = false;
@@ -221,6 +231,7 @@ namespace GUI
             }
         }
 
+        //stop simulation
         private void stop()
         {
             timer.Enabled = false;

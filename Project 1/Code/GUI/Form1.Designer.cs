@@ -51,18 +51,18 @@
             this.numericKineticFriction = new System.Windows.Forms.NumericUpDown();
             this.label8 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.textBoxTime = new System.Windows.Forms.TextBox();
+            this.label14 = new System.Windows.Forms.Label();
+            this.label13 = new System.Windows.Forms.Label();
+            this.textBoxRectAcc = new System.Windows.Forms.TextBox();
+            this.label12 = new System.Windows.Forms.Label();
+            this.textBoxSpeedRect = new System.Windows.Forms.TextBox();
+            this.textBoxAccCircle = new System.Windows.Forms.TextBox();
+            this.label11 = new System.Windows.Forms.Label();
+            this.textBoxCircleSpeed = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.numericStandGrav = new System.Windows.Forms.NumericUpDown();
-            this.textBoxCircleSpeed = new System.Windows.Forms.TextBox();
-            this.label11 = new System.Windows.Forms.Label();
-            this.textBoxAccCircle = new System.Windows.Forms.TextBox();
-            this.textBoxSpeedRect = new System.Windows.Forms.TextBox();
-            this.label12 = new System.Windows.Forms.Label();
-            this.textBoxRectAcc = new System.Windows.Forms.TextBox();
-            this.label13 = new System.Windows.Forms.Label();
-            this.label14 = new System.Windows.Forms.Label();
-            this.textBoxTime = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.display)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericAngle)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericDistance)).BeginInit();
@@ -95,7 +95,6 @@
             // 
             // updateButton
             // 
-            this.updateButton.Enabled = false;
             this.updateButton.Location = new System.Drawing.Point(599, 12);
             this.updateButton.Name = "updateButton";
             this.updateButton.Size = new System.Drawing.Size(75, 23);
@@ -368,6 +367,87 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Values";
             // 
+            // textBoxTime
+            // 
+            this.textBoxTime.Location = new System.Drawing.Point(159, 117);
+            this.textBoxTime.Name = "textBoxTime";
+            this.textBoxTime.ReadOnly = true;
+            this.textBoxTime.Size = new System.Drawing.Size(220, 20);
+            this.textBoxTime.TabIndex = 9;
+            this.textBoxTime.Text = "0";
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Location = new System.Drawing.Point(6, 120);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(55, 13);
+            this.label14.TabIndex = 8;
+            this.label14.Text = "Time (ms):";
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Location = new System.Drawing.Point(6, 94);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(146, 13);
+            this.label13.TabIndex = 7;
+            this.label13.Text = "Acceleration rectangle (m/s²):";
+            // 
+            // textBoxRectAcc
+            // 
+            this.textBoxRectAcc.Location = new System.Drawing.Point(159, 91);
+            this.textBoxRectAcc.Name = "textBoxRectAcc";
+            this.textBoxRectAcc.ReadOnly = true;
+            this.textBoxRectAcc.Size = new System.Drawing.Size(220, 20);
+            this.textBoxRectAcc.TabIndex = 6;
+            this.textBoxRectAcc.Text = "0";
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Location = new System.Drawing.Point(6, 68);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(115, 13);
+            this.label12.TabIndex = 5;
+            this.label12.Text = "Speed rectangle (m/s):";
+            // 
+            // textBoxSpeedRect
+            // 
+            this.textBoxSpeedRect.Location = new System.Drawing.Point(159, 65);
+            this.textBoxSpeedRect.Name = "textBoxSpeedRect";
+            this.textBoxSpeedRect.ReadOnly = true;
+            this.textBoxSpeedRect.Size = new System.Drawing.Size(220, 20);
+            this.textBoxSpeedRect.TabIndex = 4;
+            this.textBoxSpeedRect.Text = "0";
+            // 
+            // textBoxAccCircle
+            // 
+            this.textBoxAccCircle.Location = new System.Drawing.Point(159, 39);
+            this.textBoxAccCircle.Name = "textBoxAccCircle";
+            this.textBoxAccCircle.ReadOnly = true;
+            this.textBoxAccCircle.Size = new System.Drawing.Size(220, 20);
+            this.textBoxAccCircle.TabIndex = 3;
+            this.textBoxAccCircle.Text = "0";
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Location = new System.Drawing.Point(6, 42);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(127, 13);
+            this.label11.TabIndex = 2;
+            this.label11.Text = "Acceleration circle (m/s²):";
+            // 
+            // textBoxCircleSpeed
+            // 
+            this.textBoxCircleSpeed.Location = new System.Drawing.Point(159, 13);
+            this.textBoxCircleSpeed.Name = "textBoxCircleSpeed";
+            this.textBoxCircleSpeed.ReadOnly = true;
+            this.textBoxCircleSpeed.Size = new System.Drawing.Size(220, 20);
+            this.textBoxCircleSpeed.TabIndex = 1;
+            this.textBoxCircleSpeed.Text = "0";
+            // 
             // label9
             // 
             this.label9.AutoSize = true;
@@ -398,87 +478,6 @@
             0,
             0,
             131072});
-            // 
-            // textBoxCircleSpeed
-            // 
-            this.textBoxCircleSpeed.Location = new System.Drawing.Point(159, 13);
-            this.textBoxCircleSpeed.Name = "textBoxCircleSpeed";
-            this.textBoxCircleSpeed.ReadOnly = true;
-            this.textBoxCircleSpeed.Size = new System.Drawing.Size(220, 20);
-            this.textBoxCircleSpeed.TabIndex = 1;
-            this.textBoxCircleSpeed.Text = "0";
-            // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(6, 42);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(127, 13);
-            this.label11.TabIndex = 2;
-            this.label11.Text = "Acceleration circle (m/s²):";
-            // 
-            // textBoxAccCircle
-            // 
-            this.textBoxAccCircle.Location = new System.Drawing.Point(159, 39);
-            this.textBoxAccCircle.Name = "textBoxAccCircle";
-            this.textBoxAccCircle.ReadOnly = true;
-            this.textBoxAccCircle.Size = new System.Drawing.Size(220, 20);
-            this.textBoxAccCircle.TabIndex = 3;
-            this.textBoxAccCircle.Text = "0";
-            // 
-            // textBoxSpeedRect
-            // 
-            this.textBoxSpeedRect.Location = new System.Drawing.Point(159, 65);
-            this.textBoxSpeedRect.Name = "textBoxSpeedRect";
-            this.textBoxSpeedRect.ReadOnly = true;
-            this.textBoxSpeedRect.Size = new System.Drawing.Size(220, 20);
-            this.textBoxSpeedRect.TabIndex = 4;
-            this.textBoxSpeedRect.Text = "0";
-            // 
-            // label12
-            // 
-            this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(6, 68);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(115, 13);
-            this.label12.TabIndex = 5;
-            this.label12.Text = "Speed rectangle (m/s):";
-            // 
-            // textBoxRectAcc
-            // 
-            this.textBoxRectAcc.Location = new System.Drawing.Point(159, 91);
-            this.textBoxRectAcc.Name = "textBoxRectAcc";
-            this.textBoxRectAcc.ReadOnly = true;
-            this.textBoxRectAcc.Size = new System.Drawing.Size(220, 20);
-            this.textBoxRectAcc.TabIndex = 6;
-            this.textBoxRectAcc.Text = "0";
-            // 
-            // label13
-            // 
-            this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(6, 94);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(146, 13);
-            this.label13.TabIndex = 7;
-            this.label13.Text = "Acceleration rectangle (m/s²):";
-            // 
-            // label14
-            // 
-            this.label14.AutoSize = true;
-            this.label14.Location = new System.Drawing.Point(6, 120);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(55, 13);
-            this.label14.TabIndex = 8;
-            this.label14.Text = "Time (ms):";
-            // 
-            // textBoxTime
-            // 
-            this.textBoxTime.Location = new System.Drawing.Point(159, 117);
-            this.textBoxTime.Name = "textBoxTime";
-            this.textBoxTime.ReadOnly = true;
-            this.textBoxTime.Size = new System.Drawing.Size(220, 20);
-            this.textBoxTime.TabIndex = 9;
-            this.textBoxTime.Text = "0";
             // 
             // Form1
             // 

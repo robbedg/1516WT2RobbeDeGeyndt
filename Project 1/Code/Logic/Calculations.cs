@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace Logic
 {
-    public class Collision : ICollision
+    public class Calculations : ICalculations
     {
         public bool CheckCollision(Circle circle, Shapes.Rectangle rectangle)
         {
@@ -22,8 +22,9 @@ namespace Logic
         }
 
         //http://www.learneasy.info/MDME/MEMmods/MEM23041A-busted/dynamics/friction/Friction.html
-        public double ResultForce(double acceleration, double standardGravity, double angle, Circle circle, Shapes.Rectangle rectangle)
+        public double ResultAcceleration(double acceleration, double standardGravity, double angle, Circle circle, Shapes.Rectangle rectangle)
         {
+            //Check for friction when static
             double friction = rectangle.staticFriction;
             
             Calculation:
@@ -35,18 +36,29 @@ namespace Logic
 
                 double totalForce = (fp + fcircle) - ff;
 
+            //If the force is more than 0
             if ((friction == rectangle.staticFriction) && (totalForce > 0))
             {
+                //calculate friction when in motion
                 friction = rectangle.kineticFriction;
                 goto Calculation;
             }
+            //If not return 0
             else if ((friction == rectangle.staticFriction) && (totalForce <= 0))
             {
                 return 0d;
             }
             
-
+            //Return acceleration
             return totalForce / (circle.mass + rectangle.mass);
+        }
+
+        //Get acceleration on angle
+        //https://www.physicsforums.com/threads/help-solve-for-x-in-a-g-sin-x-uk-cos-x.348780/
+        public double Acceleration(double standardGravity, double angle, double slidingFriction)
+        {
+            double angleRad = (angle / 180) * Math.PI;
+            return standardGravity * (Math.Sin(angleRad) - (slidingFriction * Math.Cos(angleRad)));
         }
     }
 }
