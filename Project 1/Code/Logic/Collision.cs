@@ -24,13 +24,29 @@ namespace Logic
         //http://www.learneasy.info/MDME/MEMmods/MEM23041A-busted/dynamics/friction/Friction.html
         public double ResultForce(double acceleration, double standardGravity, double angle, Circle circle, Shapes.Rectangle rectangle)
         {
-            double fn = rectangle.mass * standardGravity * Math.Cos((angle / 180) * Math.PI);
-            double ff = rectangle.staticFriction * fn;
-            double fp = rectangle.mass * standardGravity * Math.Sin((angle / 180) * Math.PI);
+            double friction = rectangle.staticFriction;
+            
+            Calculation:
+                double fn = rectangle.mass * standardGravity * Math.Cos((angle / 180) * Math.PI);
+                double ff = friction * fn;
+                double fp = rectangle.mass * standardGravity * Math.Sin((angle / 180) * Math.PI);
 
-            double fcircle = circle.mass * acceleration;
+                double fcircle = circle.mass * acceleration;
 
-            return (fp + fcircle) - ff;
+                double totalForce = (fp + fcircle) - ff;
+
+            if ((friction == rectangle.staticFriction) && (totalForce > 0))
+            {
+                friction = rectangle.kineticFriction;
+                goto Calculation;
+            }
+            else if ((friction == rectangle.staticFriction) && (totalForce <= 0))
+            {
+                return 0d;
+            }
+            
+
+            return totalForce / (circle.mass + rectangle.mass);
         }
     }
 }

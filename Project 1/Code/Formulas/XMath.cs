@@ -14,5 +14,10 @@ namespace Formulas
             double angleRad = (angle / 180) * Math.PI;
             return standardGravity * (Math.Sin(angleRad) - (slidingFriction * Math.Cos(angleRad)));
         }
+
+        public static double AccelerationFromForce(double f, double m)
+        {
+            return f / m;
+        }
     }
 }
