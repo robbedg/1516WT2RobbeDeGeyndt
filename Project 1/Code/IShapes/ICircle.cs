@@ -12,5 +12,7 @@ namespace IShapes
         int radius { get; set; }
         int X { get; set; }
         int Y { get; set; }
+        double speed { get; set; }
+        double acceleration { get; set; }
     }
 }

@@ -13,6 +13,8 @@ namespace Shapes
         public int radius { get; set; }
         public int X { get; set; }
         public int Y { get; set; }
+        public double speed { get; set; }
+        public double acceleration { get; set; }
 
         public Circle()
         {
@@ -20,6 +22,8 @@ namespace Shapes
             this.radius = 0;
             this.X = 0;
             this.Y = 0;
+            this.speed = 0;
+            this.acceleration = 0;
         }
 
         public Circle(double mass, int radius, int X, int Y)
@@ -28,6 +32,8 @@ namespace Shapes
             this.radius = radius;
             this.X = X;
             this.Y = Y;
+            this.speed = 0;
+            this.acceleration = 0;
         }
     }
 }

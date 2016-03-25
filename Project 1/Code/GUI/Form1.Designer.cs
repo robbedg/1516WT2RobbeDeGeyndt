@@ -61,6 +61,8 @@
             this.label12 = new System.Windows.Forms.Label();
             this.textBoxRectAcc = new System.Windows.Forms.TextBox();
             this.label13 = new System.Windows.Forms.Label();
+            this.label14 = new System.Windows.Forms.Label();
+            this.textBoxTime = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.display)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericAngle)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericDistance)).BeginInit();
@@ -200,6 +202,11 @@
             // 
             // numericPPM
             // 
+            this.numericPPM.Increment = new decimal(new int[] {
+            10,
+            0,
+            0,
+            0});
             this.numericPPM.Location = new System.Drawing.Point(680, 93);
             this.numericPPM.Maximum = new decimal(new int[] {
             10000,
@@ -344,6 +351,8 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.textBoxTime);
+            this.groupBox1.Controls.Add(this.label14);
             this.groupBox1.Controls.Add(this.label13);
             this.groupBox1.Controls.Add(this.textBoxRectAcc);
             this.groupBox1.Controls.Add(this.label12);
@@ -352,9 +361,9 @@
             this.groupBox1.Controls.Add(this.label11);
             this.groupBox1.Controls.Add(this.textBoxCircleSpeed);
             this.groupBox1.Controls.Add(this.label9);
-            this.groupBox1.Location = new System.Drawing.Point(521, 393);
+            this.groupBox1.Location = new System.Drawing.Point(521, 367);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(385, 118);
+            this.groupBox1.Size = new System.Drawing.Size(385, 144);
             this.groupBox1.TabIndex = 23;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Values";
@@ -453,6 +462,24 @@
             this.label13.TabIndex = 7;
             this.label13.Text = "Acceleration rectangle (m/s²):";
             // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Location = new System.Drawing.Point(6, 120);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(55, 13);
+            this.label14.TabIndex = 8;
+            this.label14.Text = "Time (ms):";
+            // 
+            // textBoxTime
+            // 
+            this.textBoxTime.Location = new System.Drawing.Point(159, 117);
+            this.textBoxTime.Name = "textBoxTime";
+            this.textBoxTime.ReadOnly = true;
+            this.textBoxTime.Size = new System.Drawing.Size(220, 20);
+            this.textBoxTime.TabIndex = 9;
+            this.textBoxTime.Text = "0";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -538,6 +565,8 @@
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.TextBox textBoxRectAcc;
         private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.TextBox textBoxTime;
     }
 }
 

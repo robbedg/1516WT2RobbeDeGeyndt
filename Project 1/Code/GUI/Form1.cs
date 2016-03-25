@@ -33,12 +33,6 @@ namespace GUI
 
         double theta;                      // in degrees
         double standgrav;                   // standard gravity
-       
-        double vcircle;                    // speed
-        double acircle;                    // acceleration
-
-        double vrectangle;
-        double arectangle;
 
         bool started;                      // simulation running.
         bool hasCollision;                 // collision happened
@@ -75,22 +69,22 @@ namespace GUI
 
         private void InitGame()
         {
+            collision = new Collision();
+            circle = new Circle((double)numericCircleMass.Value, 40, 480, 0);
+            rectangle = new Shapes.Rectangle((double)numericRectangleMass.Value, (double)numericStaticFriction.Value, (double)numericKineticFriction.Value, 160, 80, (480 - 120 - (int)numericDistance.Value), 0);
+
             theta = (double)numericAngle.Value;
             standgrav = (double)numericStandGrav.Value;
             time = 0;
 
-            acircle = 0;
-            vcircle = 0;
+            circle.acceleration = 0;
+            circle.speed = 0;
 
-            arectangle = 0;
-            vrectangle = 0;
+            rectangle.acceleration = 0;
+            rectangle.speed = 0;
 
             started = false;
             hasCollision = false;
-
-            collision = new Collision();
-            circle = new Circle((double)numericCircleMass.Value, 40, 480, 0);
-            rectangle = new Shapes.Rectangle((double)numericRectangleMass.Value, (double)numericStaticFriction.Value, (double)numericKineticFriction.Value, 160, 80, (480 - 120 - (int)numericDistance.Value), 0);
         }
 
         private void DoGame()
@@ -99,31 +93,26 @@ namespace GUI
 
             if (hasCollision)
             {
-                arectangle = collision.ResultForce(acircle, standgrav, theta, (Circle)circle, (Shapes.Rectangle)rectangle);
+                rectangle.acceleration = collision.ResultForce(circle.acceleration, standgrav, theta, (Circle)circle, (Shapes.Rectangle)rectangle);
                 
-                acircle = arectangle;
+                circle.acceleration = rectangle.acceleration;
 
-                if ((arectangle <= 0)) arectangle = 0;
-                vrectangle = arectangle * (time / 1000.0d);
-                vcircle = vrectangle;
+                if ((rectangle.acceleration <= 0)) rectangle.acceleration = 0;
+                rectangle.speed = rectangle.acceleration * (time / 1000.0d);
+                circle.speed = rectangle.speed;
             }
             else
             {
-                acircle = XMath.Acceleration(standgrav, theta, 0);
+                circle.acceleration = XMath.Acceleration(standgrav, theta, 0);
 
                 if (XMath.Acceleration(standgrav, theta, rectangle.staticFriction) > 0)
                 {
-                    arectangle = XMath.Acceleration(standgrav, theta, rectangle.kineticFriction);
+                    rectangle.acceleration = XMath.Acceleration(standgrav, theta, rectangle.kineticFriction);
                 }
 
-                vcircle = acircle * (time / 1000.0d);
-                vrectangle = arectangle * (time / 1000.0d);
+                circle.speed = circle.acceleration * (time / 1000.0d);
+                rectangle.speed = rectangle.acceleration * (time / 1000.0d);
             }
-
-            textBoxCircleSpeed.Text = "" + vcircle;
-            textBoxAccCircle.Text = "" + acircle;
-            textBoxSpeedRect.Text = "" + vrectangle;
-            textBoxRectAcc.Text = "" + arectangle;
         }
 
         #endregion game loop
@@ -162,17 +151,16 @@ namespace GUI
             screen.DrawLine(new Pen(Color.Blue), new Point(-1000, 0), new Point(1000, 0));
 
             // bol pad
-            circle.X -= (int)((vcircle * 0.010) * 1000);
-            rectangle.X -= (int)((vrectangle * 0.010) * 1000);
+            circle.X -= (int)((circle.speed * 0.010) * (double)numericPPM.Value);
+            rectangle.X -= (int)((rectangle.speed * 0.010) * (double)numericPPM.Value);
 
             //Check collision
             
             if (collision.CheckCollision((Circle)circle, (Shapes.Rectangle)rectangle))
             {
-                //timer.Enabled = false;
                 circle.X = (rectangle.X + (rectangle.width / 2)) + circle.radius;
 
-                if (collision.ResultForce(acircle, standgrav, theta, (Circle)circle, (Shapes.Rectangle)rectangle) <= 0)
+                if (collision.ResultForce(circle.acceleration, standgrav, theta, (Circle)circle, (Shapes.Rectangle)rectangle) <= 0)
                 {
                     startButton_Click(new object(), new EventArgs());
                     startButton.Enabled = false;
@@ -208,8 +196,11 @@ namespace GUI
                 checkOutframe.Checked = true;
             }
             // display textboxes
-            //tijdBox.Text = String.Format("{0:F}", time / 1000.0d);
-            //thetaBox.Text = String.Format("{0:F}", v);
+            textBoxCircleSpeed.Text = "" + circle.speed;
+            textBoxAccCircle.Text = "" + circle.acceleration;
+            textBoxSpeedRect.Text = "" + rectangle.speed;
+            textBoxRectAcc.Text = "" + rectangle.acceleration;
+            textBoxTime.Text = "" + time;
         }
 
         #endregion renderer
@@ -219,7 +210,7 @@ namespace GUI
         {
             if (started)
             {
-                timer.Enabled = false;
+                //timer.Enabled = false;
                 startButton.Text = "Start";
                 started = false;
                 updateButton.Enabled = true;
