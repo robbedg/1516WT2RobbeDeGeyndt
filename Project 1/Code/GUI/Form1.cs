@@ -162,7 +162,7 @@ namespace GUI
 
                 if (collision.ResultForce(circle.acceleration, standgrav, theta, (Circle)circle, (Shapes.Rectangle)rectangle) <= 0)
                 {
-                    startButton_Click(new object(), new EventArgs());
+                    stop();
                     startButton.Enabled = false;
                     checkStopped.Checked = true;
                 }
@@ -188,7 +188,7 @@ namespace GUI
             output.DrawImage(backBuffer, new System.Drawing.Rectangle(0, 0, display.Width, display.Height), new System.Drawing.Rectangle(0, 0, display.Width, display.Height), GraphicsUnit.Pixel);
 
             
-            //TEMP
+            //check circle
             if (((circle.X <= -500) || (rectangle.X <= -500)) && !checkOutframe.Checked)
             {
                 startButton_Click(new object(), new EventArgs());
@@ -210,10 +210,7 @@ namespace GUI
         {
             if (started)
             {
-                //timer.Enabled = false;
-                startButton.Text = "Start";
-                started = false;
-                updateButton.Enabled = true;
+                stop();
             }
             else
             {
@@ -222,6 +219,14 @@ namespace GUI
                 started = true;
                 updateButton.Enabled = false;
             }
+        }
+
+        private void stop()
+        {
+            timer.Enabled = false;
+            startButton.Text = "Start";
+            started = false;
+            updateButton.Enabled = true;
         }
 
         private void resetButton_Click(object sender, EventArgs e)
