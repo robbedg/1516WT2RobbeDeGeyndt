@@ -1,5 +1,4 @@
-﻿using Formulas;
-using IShapes;
+﻿using IShapes;
 using Shapes;
 using ILogic;
 using Logic;
