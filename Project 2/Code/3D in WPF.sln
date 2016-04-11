@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.24720.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GUI", "Code\GUI.csproj", "{BDBFD5EA-549F-4899-80E6-C1FC9043C93C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TempTester", "TempTester\TempTester.csproj", "{498E2523-5936-4152-8BAD-806F36EC2D8A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BDBFD5EA-549F-4899-80E6-C1FC9043C93C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BDBFD5EA-549F-4899-80E6-C1FC9043C93C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BDBFD5EA-549F-4899-80E6-C1FC9043C93C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BDBFD5EA-549F-4899-80E6-C1FC9043C93C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{498E2523-5936-4152-8BAD-806F36EC2D8A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{498E2523-5936-4152-8BAD-806F36EC2D8A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{498E2523-5936-4152-8BAD-806F36EC2D8A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{498E2523-5936-4152-8BAD-806F36EC2D8A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
