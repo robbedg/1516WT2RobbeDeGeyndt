@@ -117,5 +117,10 @@ namespace Code
 
             NameScope.SetNameScope(Canvas1, new NameScope());
         }
+
+        private void button_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }

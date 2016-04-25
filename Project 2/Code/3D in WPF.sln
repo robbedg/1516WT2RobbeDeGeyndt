@@ -7,6 +7,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GUI", "Code\GUI.csproj", "{
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TempTester", "TempTester\TempTester.csproj", "{498E2523-5936-4152-8BAD-806F36EC2D8A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Backend", "Backend\Backend.csproj", "{4C9849EB-5108-4D26-B3D7-5C8BF91BA40D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleTester", "ConsoleTester\ConsoleTester.csproj", "{788B225C-AF6F-4389-9863-828273382654}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +25,14 @@ Global
 		{498E2523-5936-4152-8BAD-806F36EC2D8A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{498E2523-5936-4152-8BAD-806F36EC2D8A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{498E2523-5936-4152-8BAD-806F36EC2D8A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4C9849EB-5108-4D26-B3D7-5C8BF91BA40D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4C9849EB-5108-4D26-B3D7-5C8BF91BA40D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4C9849EB-5108-4D26-B3D7-5C8BF91BA40D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4C9849EB-5108-4D26-B3D7-5C8BF91BA40D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{788B225C-AF6F-4389-9863-828273382654}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{788B225C-AF6F-4389-9863-828273382654}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{788B225C-AF6F-4389-9863-828273382654}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{788B225C-AF6F-4389-9863-828273382654}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
