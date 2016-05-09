@@ -12,14 +12,19 @@ namespace ConsoleTester
         static void Main(string[] args)
         {
             SRTMtile st = new SRTMtile("srtm_37_02.asc");
-            for (int i = 0; i < 6001; i++)
+            float[,] values = st.getHeights(3, 50.8621458F, 4.3047604F);
+            for (int i = 0; i < 7; i++)
             {
-                for (int j = 0; j < 6001; j++)
+                for (int j = 0; j < 7; j++)
                 {
-                    Console.Write(st.values[i, j] + "\t");
+                    Console.Write(values[i, j]);
+                    Console.Write("\t");
                 }
                 Console.WriteLine();
             }
+
+
+
             Console.ReadKey();
         }
     }

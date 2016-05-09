@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
-VisualStudioVersion = 14.0.24720.0
+VisualStudioVersion = 14.0.25123.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GUI", "Code\GUI.csproj", "{BDBFD5EA-549F-4899-80E6-C1FC9043C93C}"
 EndProject
@@ -10,6 +10,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Backend", "Backend\Backend.csproj", "{4C9849EB-5108-4D26-B3D7-5C8BF91BA40D}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleTester", "ConsoleTester\ConsoleTester.csproj", "{788B225C-AF6F-4389-9863-828273382654}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Logic", "Logic\Logic.csproj", "{B2E9ABA9-490A-4679-AD14-3E179B9DE696}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{788B225C-AF6F-4389-9863-828273382654}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{788B225C-AF6F-4389-9863-828273382654}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{788B225C-AF6F-4389-9863-828273382654}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B2E9ABA9-490A-4679-AD14-3E179B9DE696}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B2E9ABA9-490A-4679-AD14-3E179B9DE696}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B2E9ABA9-490A-4679-AD14-3E179B9DE696}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B2E9ABA9-490A-4679-AD14-3E179B9DE696}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

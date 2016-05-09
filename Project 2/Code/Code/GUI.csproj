@@ -105,6 +105,10 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\Logic\Logic.csproj">
+      <Project>{b2e9aba9-490a-4679-ad14-3e179b9de696}</Project>
+      <Name>Logic</Name>
+    </ProjectReference>
     <ProjectReference Include="..\TempTester\TempTester.csproj">
       <Project>{498e2523-5936-4152-8bad-806f36ec2d8a}</Project>
       <Name>TempTester</Name>

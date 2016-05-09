@@ -1,4 +1,5 @@
 ﻿using HelixToolkit.Wpf;
+using Logic;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -28,7 +29,7 @@ namespace Code
             InitializeComponent();
         }
 
-        MeshGeometry3D MPane(double[,] values)
+        MeshGeometry3D MPane(float[,] values)
         {
             MeshGeometry3D pane = new MeshGeometry3D();
             Point3DCollection corners = new Point3DCollection();
@@ -69,7 +70,9 @@ namespace Code
         {
             GeometryModel3D Pane1 = new GeometryModel3D();
 
-            MeshGeometry3D paneMesh = MPane(Rand.GetRandoms());
+            Communication comm = new Communication();
+
+            MeshGeometry3D paneMesh = MPane(comm.GetOutcome);
 
             Pane1.Geometry = paneMesh;
 

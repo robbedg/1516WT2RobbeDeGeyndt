@@ -4,6 +4,7 @@ using System.Globalization;
 using System.IO;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 
 namespace Backend
@@ -14,8 +15,10 @@ namespace Backend
         private string __path;
         //Dictionary with properties
         private Dictionary<string, double> __properties;
-        //Array with float
-        private float[,] __values;
+        //Array with y-coordinates
+        private float[] __ycoordinates;
+        //Array with x-ciirdinates
+        private float[] __xcoordinates;
 
         //public values
         public string path
@@ -26,19 +29,25 @@ namespace Backend
         {
             get { return __properties; }
         }
-        public float[,] values
+        
+        public float[] ycoordinates
         {
-            get { return __values; }
+            get { return __ycoordinates; }
         }
-    
+
+        public float[] xcoordinates
+        {
+            get { return __xcoordinates; }
+        }
+
         //constructor
         public SRTMtile(string path)
         {
             this.__path = path;
-            read();
+            getCoordinates();
         }
 
-        private void read()
+        private void getCoordinates()
         {
             using (StreamReader sr = new StreamReader(__path))
             {
@@ -47,40 +56,129 @@ namespace Backend
 
                 NumberFormatInfo nfi = new NumberFormatInfo();
                 nfi.NumberDecimalSeparator = ".";
-               
+
                 for (int i = 0; i < 6; i++)
                 {
                     string propline = sr.ReadLine();
-                    var propvalues = propline.Split(new [] { ' ' }, StringSplitOptions.RemoveEmptyEntries);
+                    var propvalues = propline.Split(new[] { ' ' }, StringSplitOptions.RemoveEmptyEntries);
                     double doubleval;
                     double.TryParse(propvalues[1], NumberStyles.Any, nfi, out doubleval);
                     __properties.Add(propvalues[0], doubleval);
                 }
+                sr.Close();
+            }
 
-                //Get Values
-                //get size from properties
-                __values = new float[Convert.ToInt32(__properties["ncols"]), Convert.ToInt32(__properties["nrows"])];
+            Thread ycoordinates = new Thread(new ThreadStart(ycoordinatesThread));
+            Thread xcoordinates = new Thread(new ThreadStart(xcoordinatesThread));
 
-                int nline = 0;
+            xcoordinates.Start();
+            ycoordinates.Start();
+
+            xcoordinates.Join();
+            ycoordinates.Join();
+        }
+
+        private void ycoordinatesThread()
+        {
+            __ycoordinates = new float[Convert.ToInt32(__properties["nrows"])];
+   
+                                                                                                //Acomodate for row 0
+            double firstcelly = (__properties["yllcorner"] + (__properties["cellsize"] / 2)) + ((__properties["nrows"] - 1) * __properties["cellsize"]);
+
+            for (int row = 0; row < __ycoordinates.Count(); row++)
+            {
+                __ycoordinates[row] = (float)(firstcelly - (row * __properties["cellsize"]));
+            }
+        }
+
+        private void xcoordinatesThread()
+        {
+            __xcoordinates = new float[Convert.ToInt32(__properties["ncols"])];
+
+            double firstcellx = __properties["xllcorner"] + (__properties["cellsize"] / 2);
+
+            for (int col = 0; col < __xcoordinates.Count(); col++)
+            {
+                __xcoordinates[col] = (float)(firstcellx + (col * __properties["cellsize"]));
+            }
+        }
+        
+        public float[,] getHeights(int radius, float y, float x)
+        {
+            //Get indexes
+            int[] indexes = getIndexes(y, x);
+
+            //Array with matrixes
+            float[,] heights = new float[(radius * 2) + 1, (radius * 2) + 1];
+            
+            using (StreamReader sr = new StreamReader(__path))
+            {
+                //skip header
+                for (int i = 0; i < 6; i++) sr.ReadLine();
+
+                //skip unnescessary lines
+                for (int i = 0; i < indexes[0] - radius - 1; i++) sr.ReadLine();
+
                 string line;
-                while ((line = sr.ReadLine()) != null)
+                for (int nline = 0; nline < (radius * 2) + 1; nline++)
                 {
+                    line = sr.ReadLine();
                     var numbers = line.Split(new[] { ' ' }, StringSplitOptions.RemoveEmptyEntries);
 
                     int nval = 0;
-                    foreach (var number in numbers)
+                    for (int j = (indexes[1] - radius - 1); j < (indexes[1] + radius); j++ )
                     {
                         float val;
-                        float.TryParse(number, out val);
+                        float.TryParse(numbers[j], out val);
 
-                        __values[nline, nval] = val;
+                        heights[nline, nval] = val;
                         nval++;
                     }
-
-                    nline++;
                 }
                 sr.Close();
             }
+            return heights;
+        }
+
+        private int[] getIndexes(float y, float x)
+        {
+            int closesty = 9999;
+            int closestx = 9999;
+
+            Thread closestyThread = new Thread(() => { closesty = getClosest(y, __ycoordinates); });
+            Thread closestxThread = new Thread(() => { closestx = getClosest(x, __xcoordinates); });
+
+            closestyThread.Start();
+            closestxThread.Start();
+
+            closestyThread.Join();
+            closestxThread.Join();
+
+            return new int[] { closesty, closestx };
+        }
+
+        private int getClosest(float value, float[] array)
+        {
+            float min = 9999;
+            float mindifference = 9999;
+            for (int i = 0; i < array.Count(); i++)
+            {
+                float difference = Math.Abs(array[i] - value);
+
+                if (difference < mindifference)
+                {
+                    mindifference = difference;
+                    min = array[i];
+                }
+            }
+
+            int index = 9999;
+            for (int i = 0; i < array.Count(); i++)
+            {
+                if (array[i] == min) index = i;
+            }
+
+            return index;
         }
     }
 }
