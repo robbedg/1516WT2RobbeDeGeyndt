@@ -30,9 +30,10 @@ namespace Backend
             file = new FileInfo(@"OSMrecources\switzerland.osm");
             xmlSource = new XmlOsmStreamSource(file.OpenRead());
             xmlSource.Initialize();
+            read();
         }
 
-        public void read()
+        private void read()
         {
             while(xmlSource.MoveNextNode())
             {

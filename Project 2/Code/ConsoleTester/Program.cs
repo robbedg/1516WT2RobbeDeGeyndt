@@ -13,7 +13,6 @@ namespace ConsoleTester
         static void Main(string[] args)
         {
             OSMreader or = new OSMreader();
-            or.read();
             List<Peek> peeks = or.peeks;
 
             string test = "TESTING";

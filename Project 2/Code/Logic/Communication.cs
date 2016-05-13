@@ -11,21 +11,34 @@ namespace Logic
     public class Communication
     {
         private SRTMtile SRTM { get; set; }
+        private PeekFilter peekFilter { get; set; }
         public float[,] heights { get; set; }
         public float[] distances { get; set; }
 
         public Communication()
         {
             SRTM = new SRTMtile("srtm_38_03.asc");
-            Coordinates coordinates = new Coordinates(46.5383608F, 7.5423949F);
+            peekFilter = new PeekFilter();
+            Coordinates coordinates = new Coordinates(45.8326368F, 6.856424F);
             heights = SRTM.GetHeights(300, coordinates);
             distances = GetDistances(coordinates);
 
-            OSMreader or = new OSMreader();
-            or.read();
-            List<Peek> peeks = or.peeks;
+            string[,] peeks = peekFilter.PeekArray(SRTM, coordinates, 300);
 
-            string test = "TESTING";
+            List<string> mountains = new List<string>();
+
+            for (int x = 0; x < 601; x++)
+            {
+                for (int y = 0; y < 601; y++)
+                {
+                    if (peeks[y, x] != null)
+                    {
+                        mountains.Add(peeks[y, x]);
+                    }
+                }
+            }
+
+            string test = "Test";
 
         }
 
