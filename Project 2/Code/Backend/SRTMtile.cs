@@ -44,10 +44,10 @@ namespace Backend
         public SRTMtile(string path)
         {
             this.__path = path;
-            getCoordinates();
+            GetCoordinates();
         }
 
-        private void getCoordinates()
+        private void GetCoordinates()
         {
             using (StreamReader sr = new StreamReader(__path))
             {
@@ -68,8 +68,8 @@ namespace Backend
                 sr.Close();
             }
 
-            Thread ycoordinates = new Thread(new ThreadStart(ycoordinatesThread));
-            Thread xcoordinates = new Thread(new ThreadStart(xcoordinatesThread));
+            Thread ycoordinates = new Thread(new ThreadStart(YcoordinatesThread));
+            Thread xcoordinates = new Thread(new ThreadStart(XcoordinatesThread));
 
             xcoordinates.Start();
             ycoordinates.Start();
@@ -78,7 +78,7 @@ namespace Backend
             ycoordinates.Join();
         }
 
-        private void ycoordinatesThread()
+        private void YcoordinatesThread()
         {
             __ycoordinates = new float[Convert.ToInt32(__properties["nrows"])];
    
@@ -91,7 +91,7 @@ namespace Backend
             }
         }
 
-        private void xcoordinatesThread()
+        private void XcoordinatesThread()
         {
             __xcoordinates = new float[Convert.ToInt32(__properties["ncols"])];
 
@@ -103,10 +103,10 @@ namespace Backend
             }
         }
         
-        public float[,] getHeights(int radius, float y, float x)
+        public float[,] GetHeights(int radius, float y, float x)
         {
             //Get indexes
-            int[] indexes = getIndexes(y, x);
+            int[] indexes = GetIndexes(y, x);
 
             //Array with matrixes
             float[,] heights = new float[(radius * 2) + 1, (radius * 2) + 1];
@@ -140,13 +140,13 @@ namespace Backend
             return heights;
         }
 
-        private int[] getIndexes(float y, float x)
+        private int[] GetIndexes(float y, float x)
         {
-            int closesty = 9999;
-            int closestx = 9999;
+            int closesty = 99999;
+            int closestx = 99999;
 
-            Thread closestyThread = new Thread(() => { closesty = getClosest(y, __ycoordinates); });
-            Thread closestxThread = new Thread(() => { closestx = getClosest(x, __xcoordinates); });
+            Thread closestyThread = new Thread(() => { closesty = GetClosest(y, __ycoordinates); });
+            Thread closestxThread = new Thread(() => { closestx = GetClosest(x, __xcoordinates); });
 
             closestyThread.Start();
             closestxThread.Start();
@@ -157,7 +157,7 @@ namespace Backend
             return new int[] { closesty, closestx };
         }
 
-        private int getClosest(float value, float[] array)
+        private int GetClosest(float value, float[] array)
         {
             float min = 9999;
             float mindifference = 9999;

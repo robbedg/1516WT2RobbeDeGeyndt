@@ -24,9 +24,11 @@ namespace Code
     /// </summary>
     public partial class MainWindow : Window
     {
+        private Communication comm { get; set; }
         public MainWindow()
         {
             InitializeComponent();
+            comm = new Communication();
         }
 
         MeshGeometry3D MPane(float[,] values)
@@ -34,11 +36,14 @@ namespace Code
             MeshGeometry3D pane = new MeshGeometry3D();
             Point3DCollection corners = new Point3DCollection();
 
-            for (int i = 0; i < values.GetLength(0); i++)
+            float ydistance = comm.distances[0];
+            float xdistance = comm.distances[1];
+
+            for (int y = 0; y < values.GetLength(0); y++)
             {
-                for (int j = 0; j < values.GetLength(1); j++)
+                for (int x = 0; x < values.GetLength(1); x++)
                 {
-                    corners.Add(new Point3D(i, values[i, j], j));
+                    corners.Add(new Point3D((y * ydistance), values[y, x], (x * xdistance)));
                 }
             }
 
@@ -70,9 +75,8 @@ namespace Code
         {
             GeometryModel3D Pane1 = new GeometryModel3D();
 
-            Communication comm = new Communication();
-
-            MeshGeometry3D paneMesh = MPane(comm.GetOutcome);
+            //LOAD IN LOGIC
+            MeshGeometry3D paneMesh = MPane(comm.heights);
 
             Pane1.Geometry = paneMesh;
 
@@ -87,7 +91,7 @@ namespace Code
             AmbLicht1.Color = Colors.Black;
 
             PerspectiveCamera Camera1 = new PerspectiveCamera();
-            Camera1.FarPlaneDistance = 1000;
+            Camera1.FarPlaneDistance = 1000000;
             Camera1.NearPlaneDistance = 1;
             Camera1.FieldOfView = 45;
             Camera1.Position = new Point3D(500, 500, 500);
