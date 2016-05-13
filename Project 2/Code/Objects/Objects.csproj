@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{B2E9ABA9-490A-4679-AD14-3E179B9DE696}</ProjectGuid>
+    <ProjectGuid>{88F41BCB-8824-465F-929E-791A27EE5497}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Logic</RootNamespace>
-    <AssemblyName>Logic</AssemblyName>
+    <RootNamespace>Objects</RootNamespace>
+    <AssemblyName>Objects</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -40,18 +40,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Communication.cs" />
+    <Compile Include="Coordinates.cs" />
+    <Compile Include="GetClosest.cs" />
+    <Compile Include="Peek.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\Backend\Backend.csproj">
-      <Project>{4c9849eb-5108-4d26-b3d7-5c8bf91ba40d}</Project>
-      <Name>Backend</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Objects\Objects.csproj">
-      <Project>{88f41bcb-8824-465f-929e-791a27ee5497}</Project>
-      <Name>Objects</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

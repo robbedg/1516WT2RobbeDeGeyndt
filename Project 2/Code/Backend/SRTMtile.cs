@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Objects;
+using System;
 using System.Collections.Generic;
 using System.Globalization;
 using System.IO;
@@ -103,10 +104,10 @@ namespace Backend
             }
         }
         
-        public float[,] GetHeights(int radius, float y, float x)
+        public float[,] GetHeights(int radius, Coordinates coordinates)
         {
             //Get indexes
-            int[] indexes = GetIndexes(y, x);
+            int[] indexes = GetIndexes(coordinates);
 
             //Array with matrixes
             float[,] heights = new float[(radius * 2) + 1, (radius * 2) + 1];
@@ -140,13 +141,13 @@ namespace Backend
             return heights;
         }
 
-        private int[] GetIndexes(float y, float x)
+        private int[] GetIndexes(Coordinates coordinates)
         {
-            int closesty = 99999;
-            int closestx = 99999;
+            GetClosest closesty = new GetClosest();
+            GetClosest closestx = new GetClosest();
 
-            Thread closestyThread = new Thread(() => { closesty = GetClosest(y, __ycoordinates); });
-            Thread closestxThread = new Thread(() => { closestx = GetClosest(x, __xcoordinates); });
+            Thread closestyThread = new Thread(() => { closesty = new GetClosest(coordinates.y, __ycoordinates); });
+            Thread closestxThread = new Thread(() => { closestx = new GetClosest(coordinates.x, __xcoordinates); });
 
             closestyThread.Start();
             closestxThread.Start();
@@ -154,31 +155,7 @@ namespace Backend
             closestyThread.Join();
             closestxThread.Join();
 
-            return new int[] { closesty, closestx };
-        }
-
-        private int GetClosest(float value, float[] array)
-        {
-            float min = 9999;
-            float mindifference = 9999;
-            for (int i = 0; i < array.Count(); i++)
-            {
-                float difference = Math.Abs(array[i] - value);
-
-                if (difference < mindifference)
-                {
-                    mindifference = difference;
-                    min = array[i];
-                }
-            }
-
-            int index = 9999;
-            for (int i = 0; i < array.Count(); i++)
-            {
-                if (array[i] == min) index = i;
-            }
-
-            return index;
+            return new int[] { closesty.index, closestx.index };
         }
     }
 }

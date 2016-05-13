@@ -1,4 +1,5 @@
 ﻿using Backend;
+using Objects;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -16,13 +17,20 @@ namespace Logic
         public Communication()
         {
             SRTM = new SRTMtile("srtm_38_03.asc");
-            heights = SRTM.GetHeights(300, 46.5383608F, 7.5423949F);
-            distances = GetDistances(46.5383608F);
+            Coordinates coordinates = new Coordinates(46.5383608F, 7.5423949F);
+            heights = SRTM.GetHeights(300, coordinates);
+            distances = GetDistances(coordinates);
+
+            OSMreader or = new OSMreader();
+            or.read();
+            List<Peek> peeks = or.peeks;
+
+            string test = "TESTING";
 
         }
 
         //https://stackoverflow.com/questions/4102520/how-to-transform-a-distance-from-degrees-to-metres
-        private float[] GetDistances(float y)
+        private float[] GetDistances(Coordinates coordinates)
         {
             //Radius of Earth
             double R = 6371;
@@ -35,7 +43,7 @@ namespace Logic
             double aLat = Math.Sin(dLat / 2) * Math.Sin(dLat / 2);
 
             //Calculate Distance Lon
-            double aLon = Math.Cos(y) * Math.Cos(y) *
+            double aLon = Math.Cos(coordinates.y) * Math.Cos(coordinates.y) *
                 Math.Sin(dLon / 2) * Math.Sin(dLon / 2);
 
             double cLat = 2 * Math.Atan2(Math.Sqrt(aLat), Math.Sqrt(1 - aLat));
