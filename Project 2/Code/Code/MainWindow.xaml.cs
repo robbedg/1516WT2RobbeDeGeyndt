@@ -68,14 +68,6 @@ namespace Code
             }
 
             pane.TriangleIndices = Triangles;
-            
-            PointCollection texture = new PointCollection();
-
-            texture.Add(new Point(0, 1));
-            texture.Add(new Point(1, 0));
-            texture.Add(new Point(0, 1));
-            //texture.Add(new Point(50000, 50000));
-
 
             pane.TextureCoordinates = texturepoints;
 

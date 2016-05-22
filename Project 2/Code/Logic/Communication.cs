@@ -16,7 +16,6 @@ namespace Logic
         private PeekFilter peekFilter { get; set; }
         public float[,] heights { get; set; }
         public float[] distances { get; set; }
-        public BitmapImage texture { get; set; }
 
         public Communication()
         {
@@ -30,7 +29,6 @@ namespace Logic
             distances = GetDistances(coordinates);
 
             Texture texture = new Texture(heights);
-            this.texture = texture.GetBitmapImage();
 
             string[,] peeks = peekFilter.PeekArray(SRTM, coordinates, 300);
 
