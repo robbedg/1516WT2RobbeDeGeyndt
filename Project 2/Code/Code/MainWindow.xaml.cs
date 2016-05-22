@@ -16,6 +16,7 @@ using System.Windows.Media.Media3D;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
+
 namespace Code
 {
     /// <summary>
@@ -34,6 +35,7 @@ namespace Code
         {
             MeshGeometry3D pane = new MeshGeometry3D();
             Point3DCollection corners = new Point3DCollection();
+            PointCollection texturepoints = new PointCollection();
 
             float ydistance = comm.distances[0];
             float xdistance = comm.distances[1];
@@ -42,14 +44,14 @@ namespace Code
             {
                 for (int x = 0; x < values.GetLength(1); x++)
                 {
-                    corners.Add(new Point3D((y * ydistance), values[y, x], (x * xdistance)));
+                    corners.Add(new Point3D((y * ydistance), values[values.GetLength(0) -1 - y, x], (x * xdistance)));
+                    texturepoints.Add(new Point((x * xdistance), (y * ydistance)));
                 }
             }
 
             pane.Positions = corners;
 
             Int32Collection Triangles = new Int32Collection();
-
 
             for (int i = 0; i < values.Length; i++)
             {
@@ -66,12 +68,23 @@ namespace Code
             }
 
             pane.TriangleIndices = Triangles;
+            
+            PointCollection texture = new PointCollection();
+
+            texture.Add(new Point(0, 1));
+            texture.Add(new Point(1, 0));
+            texture.Add(new Point(0, 1));
+            //texture.Add(new Point(50000, 50000));
+
+
+            pane.TextureCoordinates = texturepoints;
 
             return pane;
         }
 
         private void Window_Loaded(object sender, RoutedEventArgs e)
         {
+            //Create pane
             GeometryModel3D Pane1 = new GeometryModel3D();
 
             //LOAD IN LOGIC
@@ -79,7 +92,11 @@ namespace Code
 
             Pane1.Geometry = paneMesh;
 
-            Pane1.Material = new DiffuseMaterial(new SolidColorBrush(Colors.LightBlue));
+            //paneMesh.Material
+            ImageBrush imagebrush = new ImageBrush();
+            imagebrush.ImageSource = new BitmapImage(new Uri("texture.bmp", UriKind.Relative));
+            Pane1.Material = new DiffuseMaterial(imagebrush);
+            Pane1.BackMaterial = new DiffuseMaterial(new SolidColorBrush(Colors.LightGray));
 
             DirectionalLight DirLicht1 = new DirectionalLight();
             DirLicht1.Color = Colors.White;
@@ -93,8 +110,9 @@ namespace Code
             Camera1.FarPlaneDistance = 1000000;
             Camera1.NearPlaneDistance = 1;
             Camera1.FieldOfView = 45;
-            Camera1.Position = new Point3D(500, 500, 500);
-            Camera1.LookDirection = new Vector3D(-500, -500, -500);
+            Camera1.Position = new Point3D(301, 5000, 301);
+            Camera1.LookDirection = new Vector3D(301, -5000, 301);
+            Camera1.LookAt(new Point3D(301, 301, 0), 0d);
             Camera1.UpDirection = new Vector3D(0, 1, 0);
 
             Model3DGroup modelGroup = new Model3DGroup();

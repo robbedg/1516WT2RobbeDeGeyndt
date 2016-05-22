@@ -2,9 +2,11 @@
 using Objects;
 using System;
 using System.Collections.Generic;
+using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Media.Imaging;
 
 namespace Logic
 {
@@ -14,14 +16,21 @@ namespace Logic
         private PeekFilter peekFilter { get; set; }
         public float[,] heights { get; set; }
         public float[] distances { get; set; }
+        public BitmapImage texture { get; set; }
 
         public Communication()
         {
-            SRTM = new SRTMtile("srtm_38_03.asc");
+            SRTM = new SRTMtile("srtm_37_02.asc");
             peekFilter = new PeekFilter();
-            Coordinates coordinates = new Coordinates(45.8326368F, 6.856424F);
+
+            Coordinates coordinates = new Coordinates(50.783346F, 2.8079119F);
+
             heights = SRTM.GetHeights(300, coordinates);
+
             distances = GetDistances(coordinates);
+
+            Texture texture = new Texture(heights);
+            this.texture = texture.GetBitmapImage();
 
             string[,] peeks = peekFilter.PeekArray(SRTM, coordinates, 300);
 

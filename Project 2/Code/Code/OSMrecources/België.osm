@@ -1,0 +1,2364 @@
+<?xml version="1.0" encoding="UTF-8"?><osm version="0.6" generator="Overpass API">
+<note>The data included in this document is from www.openstreetmap.org. The data is made available under ODbL.</note>
+<meta osm_base="2016-05-22T19:17:01Z"/>
+
+  <node id="89015336" lat="51.1573345" lon="6.4068545">
+    <tag k="ele" v="133"/>
+    <tag k="name" v="Rheydter Höhe"/>
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="98262351" lat="50.7535190" lon="6.0212978">
+    <tag k="ele" v="323"/>
+    <tag k="name" v="Vaalserberg"/>
+    <tag k="name:lt" v="Valserbergas"/>
+    <tag k="name:nl" v="Vaalserberg"/>
+    <tag k="name:ru" v="Валсерберг"/>
+    <tag k="name:uk" v="Валсерберг"/>
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="190758051" lat="50.8989099" lon="4.7729650">
+    <tag k="name" v="Steenhoven"/>
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="196287106" lat="50.5017263" lon="6.0926350">
+    <tag k="ele" v="694"/>
+    <tag k="name" v="Signal de Botrange"/>
+    <tag k="name:de" v="Baltia Hügel, höchster Punkt Belgiens"/>
+    <tag k="name:fr" v="Baltia colline, point culminant de la Belgique"/>
+    <tag k="name:nl" v="Baltia heuvel, hoogste punt van België"/>
+    <tag k="nat_name" v="Point culminant de la Belgique"/>
+    <tag k="natural" v="peak"/>
+    <tag k="tourism" v="viewpoint"/>
+    <tag k="wikipedia" v="fr:Signal de Botrange"/>
+  </node>
+  <node id="223731703" lat="50.8670880" lon="6.1440888">
+    <tag k="created_by" v="Potlatch 0.9a"/>
+    <tag k="ele" v="246"/>
+    <tag k="name" v="Bergehalde Anna I"/>
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="223752364" lat="50.8708256" lon="6.1500969">
+    <tag k="created_by" v="Potlatch 0.9a"/>
+    <tag k="ele" v="231"/>
+    <tag k="name" v="Bergehalde Anna II"/>
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="243050658" lat="50.8249949" lon="6.0733427">
+    <tag k="ele" v="213"/>
+    <tag k="name" v="Bergehalde Wilsberg"/>
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="244488806" lat="51.4496669" lon="5.5767937">
+    <tag k="ele" v="60"/>
+    <tag k="name" v="Dak van Brabant"/>
+    <tag k="natural" v="peak"/>
+    <tag k="note" v="not really natural..."/>
+    <tag k="source:ele" v="GPS"/>
+  </node>
+  <node id="251551564" lat="50.7033178" lon="6.4534092">
+    <tag k="ele" v="334"/>
+    <tag k="name" v="Eugenienstein"/>
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="253564368" lat="50.9319367" lon="6.4490220">
+    <tag k="ele" v="296"/>
+    <tag k="fixme" v="exakte höhe"/>
+    <tag k="name" v="Sophienhöhe"/>
+    <tag k="natural" v="peak"/>
+    <tag k="wikipedia" v="de:Sophienhöhe"/>
+  </node>
+  <node id="255757793" lat="51.4539468" lon="6.4648031">
+    <tag k="created_by" v="JOSM"/>
+    <tag k="name" v="Schardenberg"/>
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="255757796" lat="51.4461286" lon="6.4692986">
+    <tag k="created_by" v="JOSM"/>
+    <tag k="name" v="Saelhuyser Berg"/>
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="255757797" lat="51.4395238" lon="6.4732250">
+    <tag k="created_by" v="JOSM"/>
+    <tag k="name" v="Mühlenberg"/>
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="255757798" lat="51.4281925" lon="6.4735850">
+    <tag k="created_by" v="JOSM"/>
+    <tag k="name" v="Windberg"/>
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="255757799" lat="51.4333542" lon="6.4734379">
+    <tag k="created_by" v="JOSM"/>
+    <tag k="name" v="Hahnenberg"/>
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="255927852" lat="50.7794220" lon="2.8143783">
+    <tag k="ele" v="156"/>
+    <tag k="name" v="Kemmelberg"/>
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="256531154" lat="51.4796151" lon="6.4659209">
+    <tag k="name" v="Oermter Berg"/>
+    <tag k="natural" v="peak"/>
+    <tag k="wikipedia" v="de:Oermter Berg"/>
+  </node>
+  <node id="259756858" lat="51.4949045" lon="6.5048581">
+    <tag k="created_by" v="JOSM"/>
+    <tag k="name" v="Dachsberg"/>
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="262173371" lat="50.8303029" lon="6.1125810">
+    <tag k="created_by" v="Potlatch 0.9a"/>
+    <tag k="ele" v="183"/>
+    <tag k="name" v="Bergehalde Gouley"/>
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="263682717" lat="50.9260879" lon="6.1198607">
+    <tag k="ele" v="161"/>
+    <tag k="name" v="Bergehalde Carolus Magnus"/>
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="264531559" lat="50.8251140" lon="6.1098313">
+    <tag k="ele" v="153"/>
+    <tag k="name" v="Kalkhalde Teuterhof"/>
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="266005807" lat="50.8696663" lon="6.1880084">
+    <tag k="created_by" v="Potlatch 0.9a"/>
+    <tag k="ele" v="224"/>
+    <tag k="name" v="Bergehalde Maria-Hauptschacht"/>
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="266114312" lat="50.8656036" lon="6.1987286">
+    <tag k="created_by" v="Potlatch 0.9a"/>
+    <tag k="name" v="Bergehalde Jaspersberg (ehem. Maria I)"/>
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="266777622" lat="50.8779742" lon="6.1268137">
+    <tag k="created_by" v="Potlatch 0.9c"/>
+    <tag k="ele" v="176"/>
+    <tag k="name" v="Bergehalde Nordstern"/>
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="268803109" lat="50.5893950" lon="6.2612001">
+    <tag k="ele" v="572"/>
+    <tag k="name" v="Hohe"/>
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="269400248" lat="50.5788726" lon="6.2144858">
+    <tag k="ele" v="658"/>
+    <tag k="name" v="Steling"/>
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="269871330" lat="51.0786788" lon="6.2004731">
+    <tag k="ele" v="143"/>
+    <tag k="name" v="Ratheimer Halde"/>
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="270230571" lat="50.7318354" lon="6.0999479">
+    <tag k="ele" v="299"/>
+    <tag k="name" v="Elleterberg"/>
+    <tag k="natural" v="peak"/>
+    <tag k="source:ele" v="barometric"/>
+  </node>
+  <node id="270230572" lat="50.7262815" lon="6.0724102">
+    <tag k="name" v="Wolfsberg"/>
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="270230573" lat="50.7385709" lon="6.0675104">
+    <tag k="ele" v="351.1"/>
+    <tag k="name" v="Brandenberg"/>
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="270230576" lat="50.7389244" lon="6.0660317">
+    <tag k="ele" v="350.7"/>
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="270667941" lat="50.7993947" lon="6.1397432">
+    <tag k="ele" v="239.3"/>
+    <tag k="name" v="Haarberg"/>
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="276505496" lat="50.7335296" lon="6.0724088">
+    <tag k="alt:NN" v="358"/>
+    <tag k="ele" v="340"/>
+    <tag k="name" v="Steineknipp"/>
+    <tag k="natural" v="peak"/>
+    <tag k="note" v="Lieber User krabat: Höhenangaben werden in OSM auf WGS84 bezogen. Bitte trage daher die NN- oder NHN-Höhe eines Punkts nicht als ele ein. Danke."/>
+  </node>
+  <node id="280343288" lat="50.8103703" lon="3.5795677">
+    <tag k="name" v="Koppenberg"/>
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="281275599" lat="50.7502650" lon="6.0634894">
+    <tag k="ele" v="269"/>
+    <tag k="name" v="Scherpenberg"/>
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="281275600" lat="50.7484373" lon="6.0360756">
+    <tag k="ele" v="283"/>
+    <tag k="name" v="Strahle"/>
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="281276171" lat="50.7301631" lon="6.0611303">
+    <tag k="ele" v="354"/>
+    <tag k="name" v="Klausberg"/>
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="281277112" lat="50.7306116" lon="6.0963904">
+    <tag k="ele" v="293"/>
+    <tag k="name" v="Königsberg"/>
+    <tag k="natural" v="peak"/>
+    <tag k="source:ele" v="barometric"/>
+  </node>
+  <node id="281278216" lat="50.7329465" lon="6.1001941">
+    <tag k="ele" v="309"/>
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="281310444" lat="50.7339700" lon="6.0857074">
+    <tag k="ele" v="294"/>
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="281310446" lat="50.7332737" lon="6.0845491">
+    <tag k="ele" v="297"/>
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="281994396" lat="50.6177268" lon="6.2872466">
+    <tag k="created_by" v="Potlatch 0.10a"/>
+    <tag k="ele" v="554"/>
+    <tag k="name" v="Eifelkreuz"/>
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="282019433" lat="50.7477751" lon="6.0492809">
+    <tag k="ele" v="331"/>
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="282026013" lat="50.7545688" lon="6.0428741">
+    <tag k="ele" v="316"/>
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="286027911" lat="50.8708237" lon="4.8021022">
+    <tag k="name" v="Lastberg"/>
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="291363239" lat="50.9100113" lon="6.1571390">
+    <tag k="ele" v="212"/>
+    <tag k="name" v="Bergehalde Carl-Alexander"/>
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="292927344" lat="50.5499754" lon="6.2233509">
+    <tag k="ele" v="507"/>
+    <tag k="ele:NN" v="507"/>
+    <tag k="man_made" v="cross"/>
+    <tag k="name" v="Ehrensteinsley"/>
+    <tag k="natural" v="peak"/>
+    <tag k="summit:cross" v="yes"/>
+    <tag k="summit:register" v="yes"/>
+    <tag k="tourism" v="viewpoint"/>
+  </node>
+  <node id="300627803" lat="50.6181875" lon="6.2534148">
+    <tag k="ele" v="600"/>
+    <tag k="name" v="Hoscheit"/>
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="301648123" lat="50.7830939" lon="2.6678014">
+    <tag k="ele" v="164"/>
+    <tag k="name" v="Mont des Cats"/>
+    <tag k="name:fr" v="Mont des Cats"/>
+    <tag k="name:nl" v="Katsberg"/>
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="318370640" lat="50.8142769" lon="6.3356170">
+    <tag k="name" v="Halde Nierchen"/>
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="318379249" lat="50.8186996" lon="6.3457694">
+    <tag k="name" v="Sandberg"/>
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="318612308" lat="50.8118190" lon="6.3475575">
+    <tag k="ele" v="203"/>
+    <tag k="name" v="Hülsenberg"/>
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="320080637" lat="50.8140207" lon="3.7554735">
+    <tag k="created_by" v="Potlatch 0.10f"/>
+    <tag k="name" v="Valkenberg"/>
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="320080812" lat="50.8321296" lon="3.7797796">
+    <tag k="name" v="Berendries"/>
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="320080963" lat="50.7978266" lon="3.7700430">
+    <tag k="name" v="Tenbosse"/>
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="322551933" lat="50.7796610" lon="3.8028798">
+    <tag k="name" v="Parikeberg"/>
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="322631803" lat="50.8140238" lon="3.8087435">
+    <tag k="created_by" v="Potlatch 0.10f"/>
+    <tag k="name" v="Eikenmolen"/>
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="324256260" lat="50.8272901" lon="3.7240242">
+    <tag k="created_by" v="Potlatch 0.10f"/>
+    <tag k="name" v="Leberg"/>
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="329211575" lat="50.5580293" lon="6.2409242">
+    <tag k="ele" v="477"/>
+    <tag k="name" v="Mühlenley"/>
+    <tag k="natural" v="peak"/>
+    <tag k="tourism" v="viewpoint"/>
+  </node>
+  <node id="330991045" lat="50.8023497" lon="3.6134311">
+    <tag k="name" v="Stationsberg"/>
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="333105765" lat="50.7276699" lon="6.4684628">
+    <tag k="name" v="Hochkoppel"/>
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="338868313" lat="50.6153000" lon="6.3881733">
+    <tag k="ele" v="345"/>
+    <tag k="name" v="Grasberg"/>
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="338868566" lat="50.6089215" lon="6.3828875">
+    <tag k="ele" v="338"/>
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="343020269" lat="51.4098100" lon="6.4909130">
+    <tag k="created_by" v="Potlatch 0.10f"/>
+    <tag k="name" v="Mühlenberg"/>
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="345788045" lat="51.3564928" lon="4.3846803">
+    <tag k="name" v="De Gloriëtte"/>
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="348133715" lat="50.7950979" lon="3.5892310">
+    <tag k="name" v="Kortekeer"/>
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="348183543" lat="50.7817532" lon="3.5472329">
+    <tag k="name" v="Paterberg"/>
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="348185174" lat="50.7721357" lon="3.8894936">
+    <tag k="name" v="Muur"/>
+    <tag k="natural" v="peak"/>
+    <tag k="tourism" v="Kapelmuur"/>
+  </node>
+  <node id="351117481" lat="50.7821193" lon="3.5267709">
+    <tag k="name" v="Oude Kwaremont"/>
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="351139542" lat="49.5153806" lon="5.9310725">
+    <tag k="ele" v="383.6"/>
+    <tag k="name" v="Pakebierg"/>
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="351139588" lat="49.5198551" lon="5.9337783">
+    <tag k="ele" v="395.6"/>
+    <tag k="name" v="Loetschet"/>
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="351139618" lat="49.5262959" lon="5.9366193">
+    <tag k="ele" v="422"/>
+    <tag k="name" v="Zolverknapp"/>
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="355096259" lat="50.8424594" lon="3.6421756">
+    <tag k="name" v="Wolvenberg"/>
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="355140093" lat="49.5873935" lon="5.9038012">
+    <tag k="created_by" v="Potlatch 0.10f"/>
+    <tag k="ele" v="374"/>
+    <tag k="name" v="Lamerbierg"/>
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="360584801" lat="49.7286562" lon="6.4268897">
+    <tag k="ele" v="341"/>
+    <tag k="name" v="Hierberbierg"/>
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="364476688" lat="49.4632966" lon="6.0954509">
+    <tag k="ele" v="424"/>
+    <tag k="name" v="Ginzebierg"/>
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="369468201" lat="50.7961201" lon="3.6311511">
+    <tag k="created_by" v="Potlatch 0.10f"/>
+    <tag k="name" v="Taaienberg"/>
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="370163368" lat="50.8285615" lon="3.6742894">
+    <tag k="name" v="Varent"/>
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="370163726" lat="50.8249465" lon="3.6628760">
+    <tag k="name" v="Boigneberg"/>
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="370163997" lat="50.8231221" lon="3.6402033">
+    <tag k="name" v="Eikenberg"/>
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="370164229" lat="50.8226918" lon="3.6483012">
+    <tag k="name" v="Kokerelle"/>
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="370164275" lat="50.8231011" lon="3.6539519">
+    <tag k="name" v="Kapelleberg"/>
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="370168238" lat="50.8197336" lon="3.6842571">
+    <tag k="created_by" v="Potlatch 0.10f"/>
+    <tag k="name" v="Berg ten Stene"/>
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="370180939" lat="50.7686395" lon="3.9401006">
+    <tag k="name" v="Bosberg"/>
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="371637836" lat="50.5617433" lon="6.3141546">
+    <tag k="ele" v="407"/>
+    <tag k="name" v="Holderknipp"/>
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="371730925" lat="51.5632501" lon="3.4906499">
+    <tag k="ele" v="25"/>
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="371764924" lat="50.8497869" lon="3.6424931">
+    <tag k="created_by" v="Potlatch 0.10f"/>
+    <tag k="name" v="Kattenberg"/>
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="375962234" lat="50.4335704" lon="3.9408631">
+    <tag k="ele" v="137"/>
+    <tag k="name" v="Mont de l'Héribus (terril)"/>
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="380447581" lat="49.5977207" lon="5.8944409">
+    <tag k="ele" v="359"/>
+    <tag k="name" v="Wolkeschbierg"/>
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="385559407" lat="50.8016641" lon="2.4840511">
+    <tag k="ele" v="176"/>
+    <tag k="name" v="Mont Cassel"/>
+    <tag k="name:fr" v="Mont Cassel"/>
+    <tag k="name:nl" v="Kasselberg"/>
+    <tag k="natural" v="peak"/>
+    <tag k="tourism" v="attraction"/>
+  </node>
+  <node id="387205736" lat="50.8169969" lon="6.2441991">
+    <tag k="ele" v="194"/>
+    <tag k="name" v="Hohenstein"/>
+    <tag k="natural" v="peak"/>
+    <tag k="source" v="survey"/>
+  </node>
+  <node id="389455825" lat="50.6008432" lon="6.0991492">
+    <tag k="name" v="Meyerskreuz"/>
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="410134073" lat="49.4903243" lon="6.0608429">
+    <tag k="ele" v="411.1"/>
+    <tag k="name" v="Mont Saint-Jean"/>
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="410430970" lat="49.4494275" lon="6.3558898">
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="423219925" lat="50.9252666" lon="6.2324618">
+    <tag k="ele" v="192.1"/>
+    <tag k="name" v="Bergehalde Emil-Mayrisch"/>
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="430538347" lat="49.5173516" lon="6.4750600">
+    <tag k="ele" v="367"/>
+    <tag k="name" v="Keßlinger Berg"/>
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="430538348" lat="49.4759839" lon="6.4299870">
+    <tag k="ele" v="430"/>
+    <tag k="name" v="Schneeberg"/>
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="439202033" lat="50.8924471" lon="6.1114850">
+    <tag k="ele" v="260"/>
+    <tag k="name" v="Bergehalde Grube Adolf"/>
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="441800396" lat="51.3104314" lon="4.8823799">
+    <tag k="ele" v="36"/>
+    <tag k="name" v="Konijnenberg"/>
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="463581928" lat="49.6119565" lon="5.9221794">
+    <tag k="ele" v="400"/>
+    <tag k="name" v="Rébierg"/>
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="489842766" lat="50.7368798" lon="6.2687756">
+    <tag k="name" v="Kluckenstein"/>
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="539030062" lat="50.7028947" lon="6.4653105">
+    <tag k="name" v="Kickley"/>
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="567464837" lat="50.7827250" lon="6.0945167">
+    <tag k="ele" v="195"/>
+    <tag k="name" v="Wingertsberg"/>
+    <tag k="natural" v="peak"/>
+    <tag k="source:ele" v="barometric"/>
+  </node>
+  <node id="568035200" lat="49.5112418" lon="5.9183776">
+    <tag k="ele" v="403"/>
+    <tag k="name" v="Gaalgebierg"/>
+    <tag k="natural" v="peak"/>
+    <tag k="wikipedia" v="lb:Gaalgebierg (Bieles)"/>
+  </node>
+  <node id="568043947" lat="49.4732498" lon="6.0963997">
+    <tag k="ele" v="374"/>
+    <tag k="name" v="Roudebierg"/>
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="569134867" lat="50.6169510" lon="5.9357965">
+    <tag k="natural" v="peak"/>
+    <tag k="tourism" v="viewpoint"/>
+  </node>
+  <node id="569925888" lat="50.6245692" lon="5.9407705">
+    <tag k="name" v="Croix du Calvaire"/>
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="597839757" lat="50.7447743" lon="6.3596938">
+    <tag k="ele" v="330m"/>
+    <tag k="name" v="Leyberg"/>
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="656592599" lat="50.7618073" lon="3.6526962">
+    <tag k="name" v="Kanarieberg"/>
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="656750319" lat="50.8156379" lon="3.4671619">
+    <tag k="leisure" v="playground"/>
+    <tag k="name" v="Sint Arnolduspark"/>
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="679695054" lat="50.5243454" lon="6.4885049">
+    <tag k="name" v="Ruppenberg"/>
+    <tag k="natural" v="peak"/>
+    <tag k="note" v="fixme"/>
+  </node>
+  <node id="683268957" lat="50.5187932" lon="6.0624375">
+    <tag k="ele" v="674"/>
+    <tag k="name" v="Baraque Michel"/>
+    <tag k="natural" v="peak"/>
+    <tag k="wikipedia" v="de:Baraque Michel"/>
+  </node>
+  <node id="689036021" lat="50.6577961" lon="6.3563462">
+    <tag k="ele" v="505"/>
+    <tag k="fixme" v="als fläche eintragen"/>
+    <tag k="name" v="Buhlert"/>
+    <tag k="natural" v="peak"/>
+    <tag k="wikipedia" v="de:Buhlert (Eifel)"/>
+  </node>
+  <node id="710805893" lat="50.7740143" lon="2.8049633">
+    <tag k="ele" v="115"/>
+    <tag k="name" v="Monteberg"/>
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="710807911" lat="50.7839110" lon="2.7562931">
+    <tag k="ele" v="138"/>
+    <tag k="name" v="Rodeberg"/>
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="710818007" lat="50.7836859" lon="2.7537721">
+    <tag k="ele" v="140"/>
+    <tag k="name" v="Baneberg"/>
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="720828037" lat="51.4724188" lon="4.2839353">
+    <tag k="description" v="Good view of Antwerp and nature reserve Zoommeer"/>
+    <tag k="ele" v="15"/>
+    <tag k="natural" v="peak"/>
+    <tag k="tourism" v="viewpoint"/>
+  </node>
+  <node id="729767457" lat="50.7349901" lon="6.4690082">
+    <tag k="ele" v="264"/>
+    <tag k="name" v="Hemgenberg"/>
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="731820568" lat="51.0253418" lon="5.5241859">
+    <tag k="name" v="Terril"/>
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="738654554" lat="51.0030585" lon="5.6875820">
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="747057822" lat="50.4251548" lon="3.8195701">
+    <tag k="ele" v="108"/>
+    <tag k="name" v="Terril du Sept"/>
+    <tag k="natural" v="peak"/>
+    <tag k="tourism" v="viewpoint"/>
+  </node>
+  <node id="764090210" lat="51.3941745" lon="3.4790337">
+    <tag k="ele" v="15"/>
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="765969227" lat="50.7788793" lon="2.7328792">
+    <tag k="ele" v="152"/>
+    <tag k="name" v="Mont Noir"/>
+    <tag k="name:fr" v="Mont Noir"/>
+    <tag k="name:nl" v="Zwarteberg"/>
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="836074095" lat="50.8223716" lon="3.6275609">
+    <tag k="name" v="Ladeuze"/>
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="836168570" lat="50.8988632" lon="3.6061798">
+    <tag k="name" v="Korten Ast"/>
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="836226965" lat="50.6950778" lon="3.6573872">
+    <tag k="name" v="Hameau des Papins"/>
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="854329233" lat="50.8711300" lon="4.5735733">
+    <tag k="name" v="Flembucca"/>
+    <tag k="natural" v="peak"/>
+    <tag k="note" v="the name is an easter egg"/>
+  </node>
+  <node id="874479829" lat="50.3852123" lon="4.4509907">
+    <tag k="ele" v="213"/>
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="874541977" lat="50.3734841" lon="4.4259629">
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="901255174" lat="50.7256344" lon="6.0929532">
+    <tag k="ele" v="278"/>
+    <tag k="name" v="Tatarenkopf"/>
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="952197221" lat="50.5604894" lon="6.3690272">
+    <tag k="name" v="Gierberg"/>
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="985496440" lat="49.6686781" lon="6.4909826">
+    <tag k="ele" v="371"/>
+    <tag k="name" v="Rölerhöcht"/>
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="986355019" lat="49.6631013" lon="6.5058302">
+    <tag k="ele" v="327"/>
+    <tag k="name" v="Metzenberg"/>
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="986392086" lat="49.6394174" lon="6.4941143">
+    <tag k="ele" v="394"/>
+    <tag k="name" v="Imrother Acker"/>
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="986560682" lat="49.6289604" lon="6.4914860">
+    <tag k="ele" v="409"/>
+    <tag k="name" v="Kippberg"/>
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="986617257" lat="49.6368343" lon="6.4796905">
+    <tag k="ele" v="360"/>
+    <tag k="name" v="Kaltenberg"/>
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="1005393055" lat="49.6025393" lon="6.5067679">
+    <tag k="ele" v="435"/>
+    <tag k="name" v="Hosteberg"/>
+    <tag k="natural" v="peak"/>
+    <tag k="tourism" v="viewpoint"/>
+  </node>
+  <node id="1013301131" lat="49.5786905" lon="6.4829049">
+    <tag k="ele" v="397"/>
+    <tag k="name" v="Auf dem Kopf"/>
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="1013594865" lat="49.5829790" lon="6.4664691">
+    <tag k="ele" v="396"/>
+    <tag k="name" v="Ihlknöpfchen"/>
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="1039331672" lat="49.6096653" lon="6.4502008">
+    <tag k="ele" v="369"/>
+    <tag k="name" v="Auf dem Märchen"/>
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="1067431284" lat="50.8060248" lon="4.7020063">
+    <tag k="ele" v="102.5"/>
+    <tag k="name" v="Tomberg"/>
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="1094860504" lat="50.2351645" lon="6.4708409">
+    <tag k="ele" v="627"/>
+    <tag k="name" v="Hardt"/>
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="1100534624" lat="50.2156491" lon="6.4466426">
+    <tag k="ele" v="550,9"/>
+    <tag k="name" v="Hünert"/>
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="1100539943" lat="50.2172918" lon="6.4247446">
+    <tag k="ele" v="572,1"/>
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="1161349733" lat="50.7667974" lon="4.0071060">
+    <tag k="name" v="Congoberg"/>
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="1227741887" lat="50.7867372" lon="6.0799664">
+    <tag k="ele" v="262"/>
+    <tag k="name" v="Lousberg"/>
+    <tag k="natural" v="peak"/>
+    <tag k="note" v="WGS84-Höhe über MSL, vgl. http://wiki.openstreetmap.org/wiki/Key:ele"/>
+    <tag k="source:ele" v="DGK5"/>
+    <tag k="wikipedia" v="de:Lousberg"/>
+  </node>
+  <node id="1229686045" lat="50.8459406" lon="3.7472274">
+    <tag k="name" v="Rekelberg"/>
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="1229726679" lat="50.8596088" lon="3.7029616">
+    <tag k="name" v="Molenberg"/>
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="1249083488" lat="50.4603475" lon="3.6181054">
+    <tag k="ele" v="74"/>
+    <tag k="name" v="Terril"/>
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="1271117637" lat="50.4582776" lon="3.0374233">
+    <tag k="name" v="Terril Fosse 7 Bis"/>
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="1281232533" lat="50.6921158" lon="3.6099603">
+    <tag k="name" v="La Croisette"/>
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="1281232534" lat="50.6966476" lon="3.6203372">
+    <tag k="name" v="Grinquier"/>
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="1281437542" lat="50.7050209" lon="3.6607688">
+    <tag k="name" v="Gauquier"/>
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="1291006992" lat="50.2539409" lon="6.4514832">
+    <tag k="ele" v="587m"/>
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="1295153656" lat="49.4970647" lon="6.0180406">
+    <tag k="ele" v="406.3"/>
+    <tag k="name" v="Hasselerbierg"/>
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="1297579178" lat="50.7842887" lon="6.0860921">
+    <tag k="ele" v="229"/>
+    <tag k="name" v="Salvatorberg"/>
+    <tag k="natural" v="peak"/>
+    <tag k="note" v="WGS84-Höhe über MSL, vgl. http://wiki.openstreetmap.org/wiki/Key:ele"/>
+    <tag k="source:ele" v="barometric"/>
+    <tag k="wikipedia" v="de:Salvatorberg"/>
+  </node>
+  <node id="1299913179" lat="50.4692786" lon="4.0524966">
+    <tag k="ele" v="104"/>
+    <tag k="name" v="Terril d'Havré"/>
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="1304222648" lat="50.4042944" lon="3.1100093">
+    <tag k="name" v="Terril de l'Escarpelle"/>
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="1307184295" lat="50.2255688" lon="6.4920169">
+    <tag k="name" v="Niesenberg"/>
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="1309201429" lat="51.3560715" lon="4.3729558">
+    <tag k="loc_name" v="Trapkesberg"/>
+    <tag k="name" v="Huzarenberg"/>
+    <tag k="natural" v="peak"/>
+    <tag k="tourism" v="viewpoint"/>
+  </node>
+  <node id="1321467422" lat="50.4248275" lon="3.8693926">
+    <tag k="ele" v="111"/>
+    <tag k="name" v="Terril de la Croix"/>
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="1328801823" lat="50.6631496" lon="6.3372380">
+    <tag k="ele" v="485"/>
+    <tag k="name" v="Ochsenkopf"/>
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="1328801826" lat="50.6702276" lon="6.3187262">
+    <tag k="ele" v="492"/>
+    <tag k="name" v="Peterberg"/>
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="1375671352" lat="49.5216488" lon="6.4484181">
+    <tag k="ele" v="408"/>
+    <tag k="name" v="Renglischberg"/>
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="1386050697" lat="49.4948211" lon="6.0077824">
+    <tag k="ele" v="387.2"/>
+    <tag k="natural" v="peak"/>
+    <tag k="source" v="geoportail.lu"/>
+  </node>
+  <node id="1386051639" lat="49.5000396" lon="6.0025484">
+    <tag k="ele" v="372.7"/>
+    <tag k="name" v="Martesbierg"/>
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="1386056692" lat="49.4900966" lon="6.0034909">
+    <tag k="ele" v="377.9"/>
+    <tag k="name" v="Nossbierg"/>
+    <tag k="natural" v="peak"/>
+    <tag k="source" v="geoportail.lu"/>
+  </node>
+  <node id="1388450016" lat="49.4667820" lon="6.0538666">
+    <tag k="ele" v="434.7"/>
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="1402608597" lat="50.4336803" lon="3.8533912">
+    <tag k="ele" v="103"/>
+    <tag k="name" v="Terril de la Flache"/>
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="1406940927" lat="49.4828907" lon="6.0589668">
+    <tag k="ele" v="407.4"/>
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="1409047319" lat="49.4852552" lon="6.1306110">
+    <tag k="ele" v="315"/>
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="1429058036" lat="49.4702550" lon="6.0152193">
+    <tag k="ele" v="411.3"/>
+    <tag k="name" v="Holleschbierg"/>
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="1435606195" lat="50.7720941" lon="5.7407901">
+    <tag k="name" v="Schelberg"/>
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="1438431671" lat="50.6938157" lon="6.4760657">
+    <tag k="name" v="Hirtzley"/>
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="1445492058" lat="50.3459976" lon="3.3471013">
+    <tag k="ele" v="65"/>
+    <tag k="name" v="Terril d'Audiffret-Pasquier"/>
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="1455855288" lat="50.4081007" lon="3.4999556">
+    <tag k="name" v="Terril Sabatier"/>
+    <tag k="natural" v="peak"/>
+    <tag k="tourism" v="viewpoint"/>
+  </node>
+  <node id="1456953960" lat="50.4337345" lon="3.8321069">
+    <tag k="ele" v="76"/>
+    <tag k="name" v="Terril du Neuf (Sainte Désirée)"/>
+    <tag k="natural" v="peak"/>
+    <tag k="tourism" v="viewpoint"/>
+    <tag k="website" v="http://carto1.wallonie.be/documents/terrils/fiche_terril.idc?TERRIL_id=15"/>
+  </node>
+  <node id="1456961303" lat="50.4319167" lon="3.8347248">
+    <tag k="ele" v="91"/>
+    <tag k="name" v="Terril du Douze"/>
+    <tag k="natural" v="peak"/>
+    <tag k="tourism" v="viewpoint"/>
+    <tag k="website" v="http://carto1.wallonie.be/documents/terrils/fiche_terril.idc?TERRIL_id=16"/>
+  </node>
+  <node id="1474890737" lat="49.6194749" lon="6.4422022">
+    <tag k="ele" v="341"/>
+    <tag k="name" v="Auf den Stauden"/>
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="1486306351" lat="50.5843431" lon="6.4136814">
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="1489674351" lat="50.4233380" lon="2.9730238">
+    <tag k="heritage" v="1"/>
+    <tag k="heritage:operator" v="whc"/>
+    <tag k="name" v="Terril 92"/>
+    <tag k="natural" v="peak"/>
+    <tag k="ref:whc" v="1360-046B"/>
+    <tag k="tourism" v="viewpoint"/>
+    <tag k="whc:inscription_date" v="2012"/>
+  </node>
+  <node id="1494300666" lat="50.0994058" lon="3.5512935">
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="1497184274" lat="50.4134521" lon="3.8840161">
+    <tag k="name" v="Terril du Grand Trait"/>
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="1499475561" lat="50.7953495" lon="3.6823604">
+    <tag k="name" v="Kaperij"/>
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="1499480372" lat="50.8020340" lon="3.6909658">
+    <tag k="name" v="Forest"/>
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="1499483622" lat="50.7925451" lon="3.6980410">
+    <tag k="name" v="Steenbeekberg"/>
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="1499489303" lat="50.7663749" lon="3.5777976">
+    <tag k="name" v="Hoogberg"/>
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="1499489304" lat="50.7644825" lon="3.5864683">
+    <tag k="name" v="Kruisberg"/>
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="1499489305" lat="50.7584824" lon="3.5901334">
+    <tag k="name" v="Oude Kruisberg"/>
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="1499489319" lat="50.7835059" lon="3.5558227">
+    <tag k="name" v="Waaierberg"/>
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="1499490319" lat="50.7637265" lon="3.6453510">
+    <tag k="name" v="Fortuinberg"/>
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="1499493330" lat="50.7643765" lon="3.5280507">
+    <tag k="name" v="Knokteberg"/>
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="1499493960" lat="50.7577149" lon="3.4915904">
+    <tag k="name" v="Kluisberg"/>
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="1499494272" lat="50.7761254" lon="3.5881894">
+    <tag k="name" v="Kuithol"/>
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="1499495148" lat="50.8311566" lon="3.6260270">
+    <tag k="name" v="Achterberg"/>
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="1499495149" lat="50.8327239" lon="3.6261853">
+    <tag k="name" v="Edelareberg"/>
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="1499495150" lat="50.8391694" lon="3.6408397">
+    <tag k="name" v="Volkegemberg"/>
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="1499496295" lat="50.8032467" lon="3.6130993">
+    <tag k="name" v="Steenbeekdries"/>
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="1501622873" lat="50.4353542" lon="4.1574223">
+    <tag k="name" v="Terril Sainte-Margueritte"/>
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="1516853930" lat="50.4570194" lon="4.1346065">
+    <tag k="ele" v="133"/>
+    <tag k="name" v="Terril du Quesnoy"/>
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="1518507113" lat="50.4605525" lon="4.1576709">
+    <tag k="ele" v="209"/>
+    <tag k="name" v="Terril Albert 1er"/>
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="1534469264" lat="50.4319017" lon="4.1745083">
+    <tag k="name" v="Terril de la Caspienne"/>
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="1571277390" lat="50.6945758" lon="6.4419262">
+    <tag k="ele" v="400"/>
+    <tag k="name" v="Burgberg"/>
+    <tag k="natural" v="peak"/>
+    <tag k="wikipedia" v="de:Burgberg (Bergstein)"/>
+  </node>
+  <node id="1579943063" lat="50.4206162" lon="3.8348862">
+    <tag k="ele" v="116"/>
+    <tag k="name" v="Terril N° 6"/>
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="1581685711" lat="49.4383146" lon="6.1577955">
+    <tag k="ele" v="248"/>
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="1592927966" lat="50.3802855" lon="3.5156758">
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="1594536262" lat="49.4594850" lon="6.0025805">
+    <tag k="ele" v="410.3"/>
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="1605122661" lat="49.5100799" lon="6.1261811">
+    <tag k="ele" v="316.1"/>
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="1607422846" lat="49.4858591" lon="5.9898223">
+    <tag k="ele" v="361.5"/>
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="1634080484" lat="49.4694742" lon="5.9707875">
+    <tag k="ele" v="380"/>
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="1640542564" lat="50.7924936" lon="5.3533942">
+    <tag k="name" v="Bollenberg"/>
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="1647761290" lat="50.4432917" lon="2.7782038">
+    <tag k="heritage" v="1"/>
+    <tag k="heritage:operator" v="whc"/>
+    <tag k="name" v="Terril n°74A (11 - 19 de Lens Ouest)"/>
+    <tag k="natural" v="peak"/>
+    <tag k="ref:whc" v="1360-063AG"/>
+    <tag k="tourism" v="viewpoint"/>
+    <tag k="whc:inscription_date" v="2012"/>
+  </node>
+  <node id="1647761304" lat="50.4455477" lon="2.7825536">
+    <tag k="ele" v="187"/>
+    <tag k="heritage" v="1"/>
+    <tag k="heritage:operator" v="whc"/>
+    <tag k="name" v="Terril n°74 (11 - 19 de Lens Est)"/>
+    <tag k="natural" v="peak"/>
+    <tag k="ref:whc" v="1360-063AF"/>
+    <tag k="tourism" v="viewpoint"/>
+    <tag k="whc:inscription_date" v="2012"/>
+  </node>
+  <node id="1647761309" lat="50.4592394" lon="2.5654991">
+    <tag k="heritage" v="1"/>
+    <tag k="heritage:operator" v="whc"/>
+    <tag k="name" v="Terril n°3 (6 de Bruay Ouest)"/>
+    <tag k="natural" v="peak"/>
+    <tag k="ref:whc" v="1360-100B"/>
+    <tag k="tourism" v="viewpoint"/>
+    <tag k="whc:inscription_date" v="2012"/>
+  </node>
+  <node id="1647761335" lat="50.4607713" lon="2.5701361">
+    <tag k="heritage" v="1"/>
+    <tag k="heritage:operator" v="whc"/>
+    <tag k="name" v="Terril n°2 (6 de Bruay Est)"/>
+    <tag k="natural" v="peak"/>
+    <tag k="ref:whc" v="1360-100A"/>
+    <tag k="tourism" v="viewpoint"/>
+    <tag k="whc:inscription_date" v="2012"/>
+  </node>
+  <node id="1647761340" lat="50.4810304" lon="2.5807713">
+    <tag k="name" v="Terril n°9 (2 bis de Bruay Ouest)"/>
+    <tag k="natural" v="peak"/>
+    <tag k="tourism" v="viewpoint"/>
+  </node>
+  <node id="1647761343" lat="50.4871125" lon="2.5194718">
+    <tag k="name" v="Terril n°10 (3 de Bruay Ouest)"/>
+    <tag k="natural" v="peak"/>
+    <tag k="ref" v="T10"/>
+    <tag k="tourism" v="viewpoint"/>
+  </node>
+  <node id="1647761346" lat="50.5047049" lon="2.4843810">
+    <tag k="ele" v="103"/>
+    <tag k="heritage" v="1"/>
+    <tag k="heritage:operator" v="whc"/>
+    <tag k="name" v="Terril n°14 (5 d'Auchel)"/>
+    <tag k="natural" v="peak"/>
+    <tag k="ref:whc" v="1360-102"/>
+    <tag k="tourism" v="viewpoint"/>
+    <tag k="whc:inscription_date" v="2012"/>
+  </node>
+  <node id="1655709916" lat="49.5782445" lon="5.8641553">
+    <tag k="ele" v="380"/>
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="1655711675" lat="49.5864242" lon="5.8666025">
+    <tag k="ele" v="388"/>
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="1686050748" lat="49.4310422" lon="6.0960887">
+    <tag k="ele" v="424"/>
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="1690260533" lat="50.8135387" lon="5.6888605">
+    <tag k="ele" v="171"/>
+    <tag k="layer" v="2"/>
+    <tag k="name" v="D'n Observant"/>
+    <tag k="natural" v="peak"/>
+    <tag k="tourism" v="viewpoint"/>
+  </node>
+  <node id="1695915681" lat="50.6320320" lon="6.4688060">
+    <tag k="name" v="Meuchelberg"/>
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="1702760386" lat="50.7839924" lon="2.7479065">
+    <tag k="ele" v="142"/>
+    <tag k="name" v="Vidaigneberg"/>
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="1703005242" lat="50.7940593" lon="2.7816555">
+    <tag k="ele" v="125"/>
+    <tag k="name" v="Scherpenberg"/>
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="1706103375" lat="50.7920809" lon="2.6800667">
+    <tag k="ele" v="139"/>
+    <tag k="name" v="Mont de Boeschepe"/>
+    <tag k="name:fr" v="Mont de Boeschepe"/>
+    <tag k="name:nl" v="Boeschepeberg"/>
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="1706103392" lat="50.7892413" lon="2.7002397">
+    <tag k="ele" v="110"/>
+    <tag k="name" v="Mont Kokereel"/>
+    <tag k="name:fr" v="Mont Kokereel"/>
+    <tag k="name:nl" v="Kokereelberg"/>
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="1706150650" lat="50.7947966" lon="2.7645768">
+    <tag k="ele" v="88"/>
+    <tag k="name" v="Sulferberg"/>
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="1715990353" lat="49.4666170" lon="6.5002843">
+    <tag k="ele" v="441.9"/>
+    <tag k="name" v="Kewelsberg"/>
+    <tag k="natural" v="peak"/>
+    <tag k="source" v="lib.byu.edu Historic German Maps (PD)"/>
+  </node>
+  <node id="1715993225" lat="49.4738838" lon="6.4930692">
+    <tag k="ele" v="426.3"/>
+    <tag k="name" v="Gierensberg"/>
+    <tag k="natural" v="peak"/>
+    <tag k="source" v="lib.byu.edu Historic German Maps (PD)"/>
+  </node>
+  <node id="1718221382" lat="50.7716185" lon="3.8884164">
+    <tag k="name" v="Muur"/>
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="1737871092" lat="51.1895049" lon="3.4690934">
+    <tag k="name" v="De Kampel"/>
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="1738645423" lat="50.9804934" lon="3.3604959">
+    <tag k="name" v="Poelberg"/>
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="1745854223" lat="50.7078280" lon="6.2019086">
+    <tag k="name" v="Mönchsfelsen"/>
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="1748871481" lat="49.4737673" lon="6.4531931">
+    <tag k="ele" v="420.8"/>
+    <tag k="name" v="Urteberg"/>
+    <tag k="natural" v="peak"/>
+    <tag k="source" v="lib.byu.edu Historic German Maps (PD)"/>
+  </node>
+  <node id="1748899600" lat="49.5315325" lon="6.4899033">
+    <tag k="alt_name" v="Alteberg"/>
+    <tag k="ele" v="406.1"/>
+    <tag k="name" v="Altenberg"/>
+    <tag k="natural" v="peak"/>
+    <tag k="source" v="lib.byu.edu Historic German Maps (PD)"/>
+  </node>
+  <node id="1752363428" lat="49.5131111" lon="6.0041860">
+    <tag k="ele" v="305.7"/>
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="1755014875" lat="50.4601278" lon="2.9841740">
+    <tag k="ele" v="70"/>
+    <tag k="name" v="Terril 110"/>
+    <tag k="natural" v="peak"/>
+    <tag k="tourism" v="viewpoint"/>
+    <tag k="wikipedia" v="fr:Terrils du Bassin minier du Nord-Pas-de-Calais#Terril n.C2.B0 110.2C 9 de Dourges"/>
+  </node>
+  <node id="1782527036" lat="49.5667411" lon="6.4832920">
+    <tag k="ele" v="393"/>
+    <tag k="name" v="Pellenberg"/>
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="1787642409" lat="51.4616720" lon="3.8827710">
+    <tag k="description" v="Vluchtberg/kasteelberg. Datering: 13e eeuw; kernterp mogelijk 11e - 12e eeuw. "/>
+    <tag k="ele" v="5.2"/>
+    <tag k="heritage" v="2"/>
+    <tag k="heritage:operator" v="rce"/>
+    <tag k="historic" v="archaeological_site"/>
+    <tag k="name" v="Vliedberg"/>
+    <tag k="natural" v="peak"/>
+    <tag k="ref:rce" v="45972"/>
+  </node>
+  <node id="1787685938" lat="49.4525464" lon="6.0985692">
+    <tag k="ele" v="428"/>
+    <tag k="name" v="Hutberg"/>
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="1799621251" lat="51.4963873" lon="3.5673384">
+    <tag k="ele" v="6.9"/>
+    <tag k="name" v="Vliedberg Meinersweg"/>
+    <tag k="natural" v="peak"/>
+    <tag k="source" v="Bing,  Actueel Hoogtebestand Nederland"/>
+    <tag k="tourism" v="attraction"/>
+  </node>
+  <node id="1799706877" lat="51.5089830" lon="3.5400930">
+    <tag k="ele" v="5.5"/>
+    <tag k="name" v="Vliedberg Krommenhoeke"/>
+    <tag k="natural" v="peak"/>
+    <tag k="tourism" v="attraction"/>
+  </node>
+  <node id="1799710193" lat="51.5270621" lon="3.5420806">
+    <tag k="ele" v="1.5"/>
+    <tag k="name" v="vliedberg"/>
+    <tag k="natural" v="peak"/>
+    <tag k="tourism" v="attraction"/>
+  </node>
+  <node id="1799710194" lat="51.5424303" lon="3.4846355">
+    <tag k="description" v="Vliedberg bij St. Jan ten Heere."/>
+    <tag k="ele" v="10.2"/>
+    <tag k="heritage" v="2"/>
+    <tag k="heritage:operator" v="rce"/>
+    <tag k="name" v="Vliedberg Sint Jan Ten Heere"/>
+    <tag k="natural" v="peak"/>
+    <tag k="ref:rce" v="13209"/>
+    <tag k="start_date" v="1250"/>
+    <tag k="tourism" v="attraction"/>
+  </node>
+  <node id="1799710279" lat="51.5022595" lon="3.5714052">
+    <tag k="description" v="Vliedberg/Kasteelberg. Datering: 10e - 12e eeuw."/>
+    <tag k="ele" v="4.2"/>
+    <tag k="heritage" v="2"/>
+    <tag k="heritage:operator" v="rce"/>
+    <tag k="image" v="https://upload.wikimedia.org/wikipedia/commons/8/86/Vliedberg_Buttinge.jpg"/>
+    <tag k="name" v="Vliedberg Buttinge"/>
+    <tag k="natural" v="peak"/>
+    <tag k="ref:rce" v="45689"/>
+    <tag k="tourism" v="attraction"/>
+  </node>
+  <node id="1799711325" lat="51.5342888" lon="3.4867042">
+    <tag k="description" v="Vliedberg/Kasteelberg. Datering: omstreeks 13e eeuw."/>
+    <tag k="ele" v="5.6"/>
+    <tag k="heritage" v="2"/>
+    <tag k="heritage:operator" v="rce"/>
+    <tag k="name" v="Vliedberg Hazenberg"/>
+    <tag k="natural" v="peak"/>
+    <tag k="ref:rce" v="45688"/>
+    <tag k="start_date" v="1250"/>
+    <tag k="tourism" v="attraction"/>
+  </node>
+  <node id="1801147910" lat="50.4298095" lon="3.8728735">
+    <tag k="ele" v="86"/>
+    <tag k="name" v="Terril"/>
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="1802098815" lat="50.9766048" lon="5.9916430">
+    <tag k="ele" v="12m"/>
+    <tag k="name" v="uitzichtheuvel"/>
+    <tag k="natural" v="peak"/>
+    <tag k="tourism" v="viewpoint"/>
+  </node>
+  <node id="1857120396" lat="50.5315824" lon="6.1659466">
+    <tag k="ele" v="662"/>
+    <tag k="name" v="Pannensterzkopf (Bovel)"/>
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="1867672128" lat="49.5387100" lon="5.8594648">
+    <tag k="ele" v="395"/>
+    <tag k="name" v="Titelberg"/>
+    <tag k="name:lb" v="Tëtelbierg"/>
+    <tag k="natural" v="peak"/>
+    <tag k="wikipedia" v="lb:Tëtelbierg"/>
+  </node>
+  <node id="1887153986" lat="50.4359716" lon="3.9029365">
+    <tag k="ele" v="144"/>
+    <tag k="name" v="Terril du dix-sept / du Levant"/>
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="1887176383" lat="50.4366575" lon="3.8910063">
+    <tag k="ele" v="131"/>
+    <tag k="name" v="Terril Sainte-Henriette"/>
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="1887176387" lat="50.4327733" lon="3.8941496">
+    <tag k="ele" v="106"/>
+    <tag k="name" v="Terril Saint-Joseph"/>
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="1905995303" lat="50.4135948" lon="3.7971437">
+    <tag k="ele" v="102"/>
+    <tag k="name" v="Terril de l'Alliance"/>
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="1909035550" lat="50.4209739" lon="3.8684124">
+    <tag k="ele" v="99"/>
+    <tag k="name" v="Terril de Saint-Félix"/>
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="1910377842" lat="50.4174658" lon="3.8722860">
+    <tag k="ele" v="126"/>
+    <tag k="name" v="Terril Fief de Lamberchies"/>
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="1910377847" lat="50.4157825" lon="3.8689740">
+    <tag k="ele" v="119"/>
+    <tag k="name" v="Terril"/>
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="1911441203" lat="49.4512913" lon="6.0369952">
+    <tag k="ele" v="397.8"/>
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="1911445062" lat="49.4522392" lon="6.0442693">
+    <tag k="ele" v="408.6"/>
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="1933999183" lat="51.4082020" lon="3.7872682">
+    <tag k="description" v="Vliedberg/kasteelberg. Datering: 11e - 12e eeuw. "/>
+    <tag k="ele" v="6"/>
+    <tag k="heritage" v="2"/>
+    <tag k="heritage:operator" v="rce"/>
+    <tag k="historic" v="archaeological_site"/>
+    <tag k="image" v="https://upload.wikimedia.org/wikipedia/commons/9/92/Vliedberg_Coudorpe.JPG"/>
+    <tag k="name" v="Vliedberg"/>
+    <tag k="natural" v="peak"/>
+    <tag k="ref:rce" v="45202"/>
+    <tag k="wikipedia" v="nl:Vliedberg"/>
+  </node>
+  <node id="1934910507" lat="49.5950903" lon="3.5086241">
+    <tag k="ele" v="182"/>
+    <tag k="name" v="Le Mont Kennedy"/>
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="1977878878" lat="50.3747013" lon="4.4384453">
+    <tag k="natural" v="peak"/>
+    <tag k="tourism" v="viewpoint"/>
+  </node>
+  <node id="2000440069" lat="50.4241530" lon="2.9795913">
+    <tag k="heritage" v="1"/>
+    <tag k="heritage:operator" v="whc"/>
+    <tag k="name" v="Terril 87"/>
+    <tag k="natural" v="peak"/>
+    <tag k="ref:whc" v="1360-046A"/>
+    <tag k="whc:inscription_date" v="2012"/>
+  </node>
+  <node id="2028867909" lat="50.4698014" lon="2.6804437">
+    <tag k="name" v="Terril n°42 (3 de Noeux Sud)"/>
+    <tag k="natural" v="peak"/>
+    <tag k="tourism" v="viewpoint"/>
+  </node>
+  <node id="2034718773" lat="50.9813900" lon="4.8301740">
+    <tag k="ele" v="52"/>
+    <tag k="name" v="Kouterberg"/>
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="2074478389" lat="50.4498483" lon="4.4089017">
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="2074478391" lat="50.4267564" lon="4.4333422">
+    <tag k="ele" v="204"/>
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="2074478393" lat="50.4288903" lon="4.4000210">
+    <tag k="ele" v="203"/>
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="2074478395" lat="50.4134595" lon="4.4282664">
+    <tag k="ele" v="148"/>
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="2074478399" lat="50.4151892" lon="4.4337083">
+    <tag k="ele" v="188"/>
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="2077837729" lat="51.3625608" lon="4.3775699">
+    <tag k="name" v="Geldberg"/>
+    <tag k="natural" v="peak"/>
+    <tag k="tourism" v="viewpoint"/>
+  </node>
+  <node id="2078032105" lat="51.3090820" lon="4.3447259">
+    <tag k="description" v="(man made) peak of the Hooge Maey landfill, highest topographic point in the Province of Antwerp"/>
+    <tag k="ele" v="55"/>
+    <tag k="name" v="Hooge Maey"/>
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="2175321612" lat="50.4094516" lon="4.2963156">
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="2175321672" lat="50.4098003" lon="4.3049319">
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="2184273421" lat="50.8141302" lon="5.8995241">
+    <tag k="ele" v="157"/>
+    <tag k="name" v="Gulperberg"/>
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="2267597961" lat="50.4120855" lon="3.9438599">
+    <tag k="name" v="Terril de Ciply"/>
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="2275698278" lat="50.3956767" lon="3.9064971">
+    <tag k="name" v="Terril de Genly"/>
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="2275698281" lat="50.3929269" lon="3.9064757">
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="2282139407" lat="50.4124774" lon="3.8269536">
+    <tag k="ele" v="140"/>
+    <tag k="name" v="Terril de Marcasse"/>
+    <tag k="natural" v="peak"/>
+    <tag k="tourism" v="viewpoint"/>
+  </node>
+  <node id="2282143579" lat="50.4165971" lon="3.8276618">
+    <tag k="ele" v="125"/>
+    <tag k="name" v="Terril du dix-huit"/>
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="2290781626" lat="50.4056748" lon="3.9029031">
+    <tag k="name" v="Terril"/>
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="2290792940" lat="50.4049619" lon="3.9249929">
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="2294892573" lat="50.4028253" lon="4.3769061">
+    <tag k="ele" v="221"/>
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="2295245427" lat="50.3964408" lon="4.2974430">
+    <tag k="ele" v="246"/>
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="2295245444" lat="50.3978950" lon="4.3050532">
+    <tag k="ele" v="225"/>
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="2295245447" lat="50.3982168" lon="4.2981548">
+    <tag k="ele" v="243"/>
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="2296717778" lat="50.5843360" lon="6.4136408">
+    <tag k="ele" v="504"/>
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="2330303858" lat="49.4509755" lon="6.1480665">
+    <tag k="ele" v="257"/>
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="2344927478" lat="50.8003894" lon="2.5057670">
+    <tag k="ele" v="159"/>
+    <tag k="name" v="Mont des Récollets"/>
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="2356380545" lat="51.4874304" lon="3.5277511">
+    <tag k="ele" v="3.9"/>
+    <tag k="name" v="Vliedberg Bergweg"/>
+    <tag k="natural" v="peak"/>
+    <tag k="tourism" v="attraction"/>
+  </node>
+  <node id="2395157065" lat="49.4713151" lon="6.0303300">
+    <tag k="ele" v="400.3"/>
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="2398523798" lat="49.4303607" lon="6.2540585">
+    <tag k="ele" v="227"/>
+    <tag k="name" v="Sonneberg"/>
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="2398523839" lat="49.4236506" lon="6.2580075">
+    <tag k="ele" v="237"/>
+    <tag k="name" v="Galgenberg"/>
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="2440870569" lat="50.1288807" lon="4.8341138">
+    <tag k="ele" v="200"/>
+    <tag k="name" v="Mont D' Haurs"/>
+    <tag k="natural" v="peak"/>
+    <tag k="note" v="FIXME"/>
+  </node>
+  <node id="2444985851" lat="50.4586183" lon="4.1920589">
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="2444985852" lat="50.4616056" lon="4.1896576">
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="2510438764" lat="50.4340842" lon="3.8773029">
+    <tag k="ele" v="90"/>
+    <tag k="name" v="Terril de la Grosse Cotte"/>
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="2515037607" lat="50.3476304" lon="3.3461722">
+    <tag k="name" v="Terril d'Audiffret-Pasquier Nord"/>
+    <tag k="natural" v="peak"/>
+    <tag k="note" v="Frère jumeaux du terril d'Audiffret-Pasquier dont il ne reste que la base après exploitation."/>
+  </node>
+  <node id="2518511494" lat="50.0265750" lon="6.3480980">
+    <tag k="ele" v="497"/>
+    <tag k="name" v="Hungerberg"/>
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="2518514202" lat="50.0223190" lon="6.3346970">
+    <tag k="ele" v="458,7"/>
+    <tag k="name" v="Mühlenberg"/>
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="2518804376" lat="50.0310800" lon="6.3392210">
+    <tag k="ele" v="483,8"/>
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="2520854187" lat="49.4915580" lon="6.4250580">
+    <tag k="ele" v="380"/>
+    <tag k="name" v="380"/>
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="2521014572" lat="50.4163050" lon="4.4325787">
+    <tag k="ele" v="155"/>
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="2521014573" lat="50.4178924" lon="4.4192044">
+    <tag k="ele" v="160"/>
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="2521014574" lat="50.4197742" lon="4.4024362">
+    <tag k="ele" v="184"/>
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="2521014575" lat="50.4288000" lon="4.4031857">
+    <tag k="ele" v="192"/>
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="2521016014" lat="50.4319957" lon="4.4055347">
+    <tag k="ele" v="171"/>
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="2521016025" lat="50.4334548" lon="4.4104055">
+    <tag k="ele" v="204"/>
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="2521016462" lat="50.4360587" lon="4.4271650">
+    <tag k="ele" v="194"/>
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="2595533157" lat="49.4780831" lon="6.3441536">
+    <tag k="ele" v="296.1"/>
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="2599736530" lat="49.5467252" lon="6.3376741">
+    <tag k="ele" v="235.9"/>
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="2601275690" lat="50.4195993" lon="6.4739816">
+    <tag k="ele" v="662.8"/>
+    <tag k="name" v="Bärbelkreuz"/>
+    <tag k="natural" v="peak"/>
+    <tag k="wikipedia" v="de:Bärbelkreuz"/>
+  </node>
+  <node id="2601307046" lat="50.2529607" lon="6.5062960">
+    <tag k="ele" v="662.4"/>
+    <tag k="name" v="Seimersberg"/>
+    <tag k="natural" v="peak"/>
+    <tag k="wikipedia" v="de:Seimersberg"/>
+  </node>
+  <node id="2601919906" lat="50.4342576" lon="4.1110204">
+    <tag k="ele" v="109"/>
+    <tag k="name" v="Terril"/>
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="2621055571" lat="50.6295891" lon="5.7077673">
+    <tag k="ele" v="355"/>
+    <tag k="name" v="Terril du Hasard (Retinne)"/>
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="2665588312" lat="50.8279115" lon="5.3068978">
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="2679346378" lat="50.4368376" lon="3.9781426">
+    <tag k="ele" v="108"/>
+    <tag k="name" v="Mont Panisel"/>
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="2682504138" lat="50.3934550" lon="3.7993952">
+    <tag k="ele" v="159"/>
+    <tag k="name" v="Terril Saint-Charles"/>
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="2682504139" lat="50.4004310" lon="3.8075277">
+    <tag k="ele" v="152"/>
+    <tag k="name" v="L'Avaleresse (Terril)"/>
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="2682504140" lat="50.3929539" lon="3.8177523">
+    <tag k="ele" v="162"/>
+    <tag k="name" v="Le Sauwartan (Terril)"/>
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="2684781824" lat="50.4227834" lon="3.9014360">
+    <tag k="ele" v="140"/>
+    <tag k="name" v="Mont Ostène"/>
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="2702650916" lat="49.6312283" lon="6.3539382">
+    <tag k="ele" v="338.2"/>
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="2723338605" lat="51.0594883" lon="5.3299484">
+    <tag k="ele" v="135m"/>
+    <tag k="name" v="Terril"/>
+    <tag k="natural" v="peak"/>
+    <tag k="tourism" v="viewpoint"/>
+  </node>
+  <node id="2745612305" lat="49.4540384" lon="6.0548089">
+    <tag k="ele" v="428"/>
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="2753978526" lat="49.5292491" lon="5.8727928">
+    <tag k="ele" v="418"/>
+    <tag k="name" v="Col de l´Europe"/>
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="2756678967" lat="49.5124334" lon="5.9011690">
+    <tag k="ele" v="388"/>
+    <tag k="name" v="Rattem"/>
+    <tag k="natural" v="peak"/>
+    <tag k="wikipedia" v="lb:Rattem"/>
+  </node>
+  <node id="2791728056" lat="50.4225849" lon="3.8192825">
+    <tag k="ele" v="92"/>
+    <tag k="natural" v="peak"/>
+    <tag k="sport" v="free_flying"/>
+  </node>
+  <node id="2798107109" lat="50.7215200" lon="5.7996415">
+    <tag k="name" v="La Heydt"/>
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="2798107110" lat="50.7180863" lon="5.7974769">
+    <tag k="ele" v="243"/>
+    <tag k="name" v="Les Waides"/>
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="2798107111" lat="50.6976763" lon="5.7899373">
+    <tag k="name" v="Asse"/>
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="2798107121" lat="50.7081886" lon="5.8893796">
+    <tag k="ele" v="285"/>
+    <tag k="name" v="Berg Clouse"/>
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="2825789074" lat="50.4101713" lon="3.7724549">
+    <tag k="ele" v="100m"/>
+    <tag k="name" v="Terril Saint Antoine Vedette"/>
+    <tag k="natural" v="peak"/>
+    <tag k="note" v="Il s'agit du terril qui jouxte la plaine de la machine à feu où se déroule le Dour festival (festival de musique alternative)."/>
+    <tag k="source" v="http://www.terril.be"/>
+  </node>
+  <node id="2828879547" lat="50.8503626" lon="6.3667469">
+    <tag k="ele" v="143.5"/>
+    <tag k="name" v="Goltsteinkuppe"/>
+    <tag k="natural" v="peak"/>
+    <tag k="wikipedia" v="de:Goltsteinkuppe"/>
+  </node>
+  <node id="2866757601" lat="50.4142003" lon="3.8261167">
+    <tag k="ele" v="134"/>
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="2866757602" lat="50.4129150" lon="3.8142936">
+    <tag k="ele" v="133"/>
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="2866796927" lat="50.4265724" lon="3.8734385">
+    <tag k="ele" v="98"/>
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="2876309370" lat="50.3991853" lon="3.8446372">
+    <tag k="ele" v="126"/>
+    <tag k="name" v="Terril"/>
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="2876309371" lat="50.3972772" lon="3.8447767">
+    <tag k="ele" v="145"/>
+    <tag k="name" v="Grand Bouillon d'En Bas"/>
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="2876309372" lat="50.4141431" lon="3.8404422">
+    <tag k="ele" v="113"/>
+    <tag k="name" v="Terril du Pachy"/>
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="2891331890" lat="49.4814923" lon="5.9738019">
+    <tag k="ele" v="366"/>
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="2891563210" lat="51.0604557" lon="4.6725104">
+    <tag k="ele" v="51.6"/>
+    <tag k="name" v="Beerzelberg"/>
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="2911708713" lat="50.8735261" lon="6.1286429">
+    <tag k="ele" v="257"/>
+    <tag k="name" v="Bergehalde Anna Noppenberg"/>
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="2923383931" lat="49.4897269" lon="5.9164699">
+    <tag k="ele" v="420"/>
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="2924524331" lat="50.6888119" lon="5.7212440">
+    <tag k="name" v="Terril de Blegny"/>
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="2929889579" lat="49.5968308" lon="6.4982650">
+    <tag k="ele" v="435"/>
+    <tag k="name" v="Hosteberg"/>
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="2939682584" lat="50.8008445" lon="6.2598536">
+    <tag k="ele" v="250.1"/>
+    <tag k="name" v="Schwarzer Berg"/>
+    <tag k="natural" v="peak"/>
+    <tag k="wikipedia" v="de:Schwarzer Berg (Eschweiler)"/>
+  </node>
+  <node id="2949993361" lat="51.0090308" lon="5.5496939">
+    <tag k="ele" v="142m"/>
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="2985674509" lat="49.6845405" lon="5.8161452">
+    <tag k="name" v="Knippchen"/>
+    <tag k="natural" v="peak"/>
+    <tag k="wikidata" v="Q16648590"/>
+    <tag k="wikipedia" v="fr:Knippchen"/>
+  </node>
+  <node id="3006338619" lat="49.5453310" lon="5.8792636">
+    <tag k="ele" v="400"/>
+    <tag k="name" v="Giele Botter"/>
+    <tag k="natural" v="peak"/>
+    <tag k="wikipedia" v="lb:Giele Botter"/>
+  </node>
+  <node id="3027723855" lat="49.4656145" lon="6.4094911">
+    <tag k="ele" v="375"/>
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="3034719872" lat="49.5010512" lon="5.9059140">
+    <tag k="ele" v="422"/>
+    <tag k="name" v="Ronnebierg"/>
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="3042910123" lat="49.8529615" lon="6.1508516">
+    <tag k="ele" v="366"/>
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="3049074389" lat="49.5180841" lon="6.3243287">
+    <tag k="ele" v="301.6"/>
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="3050923581" lat="50.4214403" lon="4.0606691">
+    <tag k="name" v="Terril"/>
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="3050923582" lat="50.4220760" lon="4.0618922">
+    <tag k="name" v="Terril"/>
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="3050923583" lat="50.4232415" lon="4.0635391">
+    <tag k="name" v="Terril"/>
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="3080345267" lat="49.4252961" lon="6.0932353">
+    <tag k="ele" v="408"/>
+    <tag k="name" v="Freudenberg"/>
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="3143898286" lat="51.6435002" lon="6.4425449">
+    <tag k="ele" v="74.1"/>
+    <tag k="name" v="Heesberg"/>
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="3143898287" lat="51.6359168" lon="6.4459443">
+    <tag k="ele" v="74.9"/>
+    <tag k="name" v="Wolfsberg"/>
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="3203788165" lat="50.3557703" lon="3.4090850">
+    <tag k="name" v="Terril"/>
+    <tag k="natural" v="peak"/>
+    <tag k="source" v="cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2014"/>
+  </node>
+  <node id="3205034661" lat="50.3421061" lon="3.2308201">
+    <tag k="heritage" v="1"/>
+    <tag k="heritage:operator" v="whc"/>
+    <tag k="historic" v="yes"/>
+    <tag k="man_made" v="spoil_heap"/>
+    <tag k="name" v="Terril 125a"/>
+    <tag k="natural" v="peak"/>
+    <tag k="ref" v="T 125a"/>
+    <tag k="ref:whc" v="1360-021"/>
+    <tag k="whc:inscription_date" v="2012"/>
+    <tag k="wikimedia_commons" v="Category:Terril_n°_125A,_Sainte_Marie_Ouest"/>
+  </node>
+  <node id="3260377561" lat="50.4513269" lon="2.9920323">
+    <tag k="heritage" v="1"/>
+    <tag k="heritage:operator" v="whc"/>
+    <tag k="name" v="Terril 116"/>
+    <tag k="natural" v="peak"/>
+    <tag k="ref:whc" v="1360-042F"/>
+    <tag k="source" v="cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2014"/>
+    <tag k="whc:inscription_date" v="2012"/>
+  </node>
+  <node id="3260377562" lat="50.4479492" lon="2.9953933">
+    <tag k="heritage" v="1"/>
+    <tag k="heritage:operator" v="whc"/>
+    <tag k="name" v="Terril 117"/>
+    <tag k="natural" v="peak"/>
+    <tag k="ref:whc" v="1360-042G"/>
+    <tag k="source" v="cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2014"/>
+    <tag k="whc:inscription_date" v="2012"/>
+  </node>
+  <node id="3262131761" lat="50.4834394" lon="2.9203554">
+    <tag k="name" v="Terril 98"/>
+    <tag k="natural" v="peak"/>
+    <tag k="source" v="cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2014"/>
+  </node>
+  <node id="3263955261" lat="50.4514262" lon="2.8904478">
+    <tag k="name" v="Terril 93"/>
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="3274250361" lat="50.4492355" lon="3.0641988">
+    <tag k="name" v="Terril 122"/>
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="3274309962" lat="50.3191474" lon="3.2039225">
+    <tag k="name" v="Terril 222"/>
+    <tag k="natural" v="peak"/>
+    <tag k="ref" v="T222"/>
+  </node>
+  <node id="3281215674" lat="50.5311560" lon="6.4783468">
+    <tag k="ele" v="362,3"/>
+    <tag k="name" v="Gangfort"/>
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="3283574816" lat="51.0010644" lon="4.7627228">
+    <tag k="ele" v="45"/>
+    <tag k="name" v="Balenberg"/>
+    <tag k="natural" v="peak"/>
+    <tag k="wikipedia" v="nl:Balenberg"/>
+  </node>
+  <node id="3283574831" lat="51.0029027" lon="4.7677315">
+    <tag k="ele" v="35"/>
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="3285750103" lat="49.8131708" lon="6.3982606">
+    <tag k="name" v="Lerelchen"/>
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="3292001721" lat="51.0695526" lon="5.2284404">
+    <tag k="ele" v="77m"/>
+    <tag k="name" v="Terril"/>
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="3292001722" lat="51.0729660" lon="5.2357617">
+    <tag k="ele" v="110m"/>
+    <tag k="name" v="Terril"/>
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="3299933362" lat="50.3420165" lon="3.2731702">
+    <tag k="name" v="Terril reconstitué"/>
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="3300040589" lat="50.9872501" lon="5.4774713">
+    <tag k="ele" v="148m"/>
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="3300040592" lat="51.0120769" lon="5.5423426">
+    <tag k="ele" v="155m"/>
+    <tag k="name" v="Terril"/>
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="3339965500" lat="50.1148265" lon="6.2857922">
+    <tag k="ele" v="569"/>
+    <tag k="name" v="Lichtenborner Höhe (569m)"/>
+    <tag k="natural" v="peak"/>
+    <tag k="source" v="roscheiderhof.de"/>
+    <tag k="tourism" v="viewpoint"/>
+  </node>
+  <node id="3342364293" lat="50.5093900" lon="2.4839101">
+    <tag k="name" v="Terril n° 13 (3 d'Auchel Est)"/>
+    <tag k="natural" v="peak"/>
+    <tag k="ref" v="T13"/>
+    <tag k="tourism" v="viewpoint"/>
+  </node>
+  <node id="3342364393" lat="50.4890827" lon="2.5018394">
+    <tag k="name" v="Terril n° 15 (6 d'Auchel)"/>
+    <tag k="natural" v="peak"/>
+    <tag k="ref" v="T15"/>
+    <tag k="tourism" v="viewpoint"/>
+  </node>
+  <node id="3342364493" lat="50.5321303" lon="2.4293112">
+    <tag k="name" v="Terril n° 21 (3 de Ferfay)"/>
+    <tag k="natural" v="peak"/>
+    <tag k="ref" v="T21"/>
+    <tag k="tourism" v="viewpoint"/>
+  </node>
+  <node id="3342364593" lat="50.4810344" lon="2.5174749">
+    <tag k="name" v="Terril n°1 (5 de Bruay Nord)"/>
+    <tag k="natural" v="peak"/>
+    <tag k="ref" v="T1"/>
+    <tag k="tourism" v="viewpoint"/>
+  </node>
+  <node id="3386581161" lat="50.4182949" lon="6.4776789">
+    <tag k="ele" v="645.2"/>
+    <tag k="name" v="an der L 110"/>
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="3417441282" lat="49.4573427" lon="3.9766219">
+    <tag k="ele" v="171"/>
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="3424714696" lat="50.4963273" lon="6.3168589">
+    <tag k="ele" v="620.8"/>
+    <tag k="name" v="Wahlerscheid"/>
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="3469515253" lat="49.7592702" lon="6.3762432">
+    <tag k="ele" v="385"/>
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="3484436099" lat="51.4839088" lon="6.4660337">
+    <tag k="ele" v="68"/>
+    <tag k="name" v="Oermter Berg"/>
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="3490805552" lat="50.5168152" lon="6.3766921">
+    <tag k="ele" v="610.0"/>
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="3545514491" lat="50.8087351" lon="3.5798869">
+    <tag k="name" v="Rotelenberg"/>
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="3558596493" lat="50.9459399" lon="5.0820578">
+    <tag k="name" v="Mertenberg"/>
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="3599349170" lat="51.4721834" lon="3.9053997">
+    <tag k="description" v="Terrein waarin een vluchtberg/kasteelberg. Datering: 10e - 13e eeuw."/>
+    <tag k="ele" v="5.2"/>
+    <tag k="heritage" v="2"/>
+    <tag k="heritage:operator" v="rce"/>
+    <tag k="historic" v="archaeological_site"/>
+    <tag k="name" v="'t Hof Blaemskinderen"/>
+    <tag k="natural" v="peak"/>
+    <tag k="ref:rce" v="45204"/>
+  </node>
+  <node id="3622040854" lat="50.5312936" lon="6.4853381">
+    <tag k="ele" v="416,10"/>
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="3627394296" lat="49.4836739" lon="6.2438200">
+    <tag k="ele" v="241"/>
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="3652895593" lat="51.4541133" lon="3.8510510">
+    <tag k="ele" v="3.2"/>
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="3656533701" lat="51.4808919" lon="3.9039371">
+    <tag k="ele" v="4.2"/>
+    <tag k="name" v="Vliedberg de Groe"/>
+    <tag k="natural" v="peak"/>
+    <tag k="source" v="Actueel Hoogtebestand Nederland, Bing"/>
+  </node>
+  <node id="3658134465" lat="51.5162098" lon="3.9857918">
+    <tag k="ele" v="9.5"/>
+    <tag k="name" v="Vliedberg"/>
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="3666897861" lat="51.3664256" lon="3.5069425">
+    <tag k="ele" v="3.6"/>
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="3683694565" lat="51.3106837" lon="3.9159014">
+    <tag k="ele" v="3.5"/>
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="3687004872" lat="50.8409009" lon="3.5337753">
+    <tag k="name" v="Petegemberg"/>
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="3705029424" lat="51.5211442" lon="3.6650839">
+    <tag k="description" v="Terrein waarin een vluchtberg (kasteelberg). Datering: 11e - 13e eeuw."/>
+    <tag k="ele" v="3.5"/>
+    <tag k="heritage" v="2"/>
+    <tag k="heritage:operator" v="rce"/>
+    <tag k="name" v="vliedberg"/>
+    <tag k="natural" v="peak"/>
+    <tag k="ref:rce" v="45562"/>
+  </node>
+  <node id="3705180916" lat="49.5238985" lon="2.6700195">
+    <tag k="ele" v="121"/>
+    <tag k="name" v="Montagne de la Garenne"/>
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="3705180918" lat="49.5317990" lon="2.6849991">
+    <tag k="ele" v="128"/>
+    <tag k="name" v="Montagne de Lataule"/>
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="3705180919" lat="49.5162900" lon="2.6668250">
+    <tag k="ele" v="98"/>
+    <tag k="name" v="Montagne de la Somme d'Or"/>
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="3705357818" lat="51.4534077" lon="3.6264678">
+    <tag k="description" v="Vliedberg (kasteelberg). Datering: 10e - 13e eeuw."/>
+    <tag k="ele" v="5"/>
+    <tag k="heritage" v="2"/>
+    <tag k="heritage:operator" v="rce"/>
+    <tag k="name" v="vliedberg"/>
+    <tag k="natural" v="peak"/>
+    <tag k="ref:rce" v="46095"/>
+  </node>
+  <node id="3710965102" lat="51.4608054" lon="3.5474027">
+    <tag k="description" v="Vliedberg (kasteelberg). Datering: 10e - 13e eeuw."/>
+    <tag k="ele" v="6"/>
+    <tag k="heritage" v="2"/>
+    <tag k="heritage:operator" v="rce"/>
+    <tag k="name" v="vliedberg"/>
+    <tag k="natural" v="peak"/>
+    <tag k="ref:rce" v="46094"/>
+  </node>
+  <node id="3710965103" lat="51.4765240" lon="3.5743888">
+    <tag k="description" v="Vliedberg (kasteelberg). Datering: 10e - 13e eeuw."/>
+    <tag k="ele" v="4"/>
+    <tag k="heritage" v="2"/>
+    <tag k="heritage:operator" v="rce"/>
+    <tag k="name" v="vliedberg"/>
+    <tag k="natural" v="peak"/>
+    <tag k="ref:rce" v="46093"/>
+  </node>
+  <node id="3713975020" lat="49.8986483" lon="2.5813788">
+    <tag k="ele" v="80"/>
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="3717798958" lat="49.5770107" lon="2.9206441">
+    <tag k="ele" v="163"/>
+    <tag k="name" v="Mont de Cuy"/>
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="3717803499" lat="49.5929039" lon="2.9461156">
+    <tag k="ele" v="152"/>
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="3717803510" lat="49.5801754" lon="2.9560720">
+    <tag k="ele" v="153"/>
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="3718236783" lat="49.5549706" lon="2.7720154">
+    <tag k="ele" v="168"/>
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="3718236793" lat="49.5364147" lon="2.8939100">
+    <tag k="ele" v="188"/>
+    <tag k="name" v="Montagne d'Attiche"/>
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="3718237263" lat="49.5319784" lon="2.7980382">
+    <tag k="ele" v="186"/>
+    <tag k="name" v="Montagne du Hazoir"/>
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="3718237310" lat="49.5707728" lon="2.8522435">
+    <tag k="ele" v="163"/>
+    <tag k="name" v="Le Plémont"/>
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="3718237326" lat="49.5066904" lon="2.8782073">
+    <tag k="ele" v="148"/>
+    <tag k="name" v="Montagne d'Hauette"/>
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="3721598175" lat="50.4744167" lon="4.1724511">
+    <tag k="ele" v="155"/>
+    <tag k="name" v="Terril Saint-Hubert"/>
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="3721598176" lat="50.4722044" lon="4.1770645">
+    <tag k="ele" v="167"/>
+    <tag k="name" v="Terril Sainte-Marie"/>
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="3730889195" lat="51.4985931" lon="3.5264980">
+    <tag k="ele" v="4.8"/>
+    <tag k="name" v="vliedberg"/>
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="3730889196" lat="51.4997059" lon="3.5269753">
+    <tag k="ele" v="4.4"/>
+    <tag k="name" v="vliedberg"/>
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="3730959962" lat="51.5188098" lon="3.4661503">
+    <tag k="ele" v="9.2"/>
+    <tag k="name" v="Vliedberg Boudewijnskerke"/>
+    <tag k="natural" v="peak"/>
+    <tag k="tourism" v="attraction"/>
+  </node>
+  <node id="3740412650" lat="51.4848442" lon="3.8381596">
+    <tag k="ele" v="3.4"/>
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="3764267586" lat="51.2336207" lon="6.0726329">
+    <tag k="ele" v="60"/>
+    <tag k="name" v="Bosberg"/>
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="3790820780" lat="50.8686153" lon="5.5186985">
+    <tag k="name" v="Borreberg"/>
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="3792388875" lat="50.4962367" lon="5.8646652">
+    <tag k="ele" v="337"/>
+    <tag k="name" v="Col D'annette et Lubin"/>
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="3793199141" lat="50.4427631" lon="4.1065655">
+    <tag k="ele" v="119"/>
+    <tag k="name" v="Terril Marie-José"/>
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="3793851596" lat="50.6065550" lon="6.4587475">
+    <tag k="ele" v="526"/>
+    <tag k="name" v="Hellberg"/>
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="3794989022" lat="50.6148436" lon="6.4040445">
+    <tag k="ele" v="495"/>
+    <tag k="name" v="Honigberg"/>
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="3794989023" lat="50.6166232" lon="6.4209476">
+    <tag k="ele" v="525"/>
+    <tag k="name" v="Wildbretshügel"/>
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="3795080128" lat="50.6370671" lon="6.4302622">
+    <tag k="name" v="Tonsberg"/>
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="3802152404" lat="50.6336000" lon="6.3741326">
+    <tag k="name" v="Gansberg"/>
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="3812801870" lat="51.5359047" lon="4.0932263">
+    <tag k="description" v="Terrein waarin vlucht-/kasteelberg. Datering: 10e - 13e eeuw."/>
+    <tag k="ele" v="8.1"/>
+    <tag k="heritage" v="2"/>
+    <tag k="heritage:operator" v="rce"/>
+    <tag k="name" v="vliedberg"/>
+    <tag k="natural" v="peak"/>
+    <tag k="ref:rce" v="46034"/>
+  </node>
+  <node id="3834538483" lat="49.4404315" lon="2.8987622">
+    <tag k="ele" v="113"/>
+    <tag k="name" v="Butte du Châtelet"/>
+    <tag k="natural" v="peak"/>
+    <tag k="source" v="cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2015"/>
+  </node>
+  <node id="3834538487" lat="49.4546286" lon="2.9554231">
+    <tag k="name" v="Petite Tête des Chatillons"/>
+    <tag k="natural" v="peak"/>
+    <tag k="source" v="cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2015"/>
+  </node>
+  <node id="3851863616" lat="49.4423883" lon="2.9121430">
+    <tag k="ele" v="108"/>
+    <tag k="name" v="Mont Moyen"/>
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="3851863617" lat="49.4434572" lon="2.9226924">
+    <tag k="ele" v="107"/>
+    <tag k="name" v="Mont Renard"/>
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="3851863618" lat="49.4321656" lon="2.9472198">
+    <tag k="name" v="Mont du Fouilleux"/>
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="3851863619" lat="49.4408782" lon="2.9383276">
+    <tag k="ele" v="100"/>
+    <tag k="name" v="Mont l'Ecange"/>
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="3894249172" lat="51.4897163" lon="3.8267908">
+    <tag k="ele" v="3.5"/>
+    <tag k="natural" v="peak"/>
+    <tag k="source" v="AHN"/>
+  </node>
+  <node id="3912371765" lat="50.6908400" lon="6.2153809">
+    <tag k="ele" v="364"/>
+    <tag k="name" v="Giersberg"/>
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="3922004905" lat="50.4897276" lon="6.4692814">
+    <tag k="ele" v="412.8"/>
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="3922004906" lat="50.4984266" lon="6.4553092">
+    <tag k="ele" v="485.9"/>
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="3922004907" lat="50.4989204" lon="6.4627558">
+    <tag k="ele" v="394.5"/>
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="3926712572" lat="50.6506127" lon="6.3147646">
+    <tag k="name" v="Alzenberg"/>
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="3926712573" lat="50.6501457" lon="6.3249263">
+    <tag k="name" v="Menzberg"/>
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="3941590135" lat="50.6784616" lon="4.4047746">
+    <tag k="name" v="Lion de Waterloo"/>
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="3944217906" lat="49.5794157" lon="4.3251162">
+    <tag k="ele" v="154"/>
+    <tag k="name" v="Montagne de Sery"/>
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="3944217993" lat="49.5959067" lon="4.3406454">
+    <tag k="ele" v="179"/>
+    <tag k="name" v="Côte de Sainfoin"/>
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="3967831607" lat="49.4823717" lon="3.5945812">
+    <tag k="name" v="Mont des Vaches"/>
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="3999082289" lat="49.4417277" lon="4.2224927">
+    <tag k="ele" v="130"/>
+    <tag k="name" v="Mont de l'Ecaille"/>
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="3999093212" lat="49.4517723" lon="4.2687243">
+    <tag k="ele" v="146"/>
+    <tag k="name" v="Mont de Saint-Loup"/>
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="3999248825" lat="50.7230789" lon="5.8646480">
+    <tag k="ele" v="287"/>
+    <tag k="name" v="Hagelstein"/>
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="4003090402" lat="50.7596801" lon="3.5731036">
+    <tag k="ele" v="150"/>
+    <tag k="name" v="Hotondberg"/>
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="4003090403" lat="50.7644913" lon="3.6433798">
+    <tag k="ele" v="145"/>
+    <tag k="name" v="Muziekberg"/>
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="4003090404" lat="50.7643520" lon="3.6993167">
+    <tag k="ele" v="157"/>
+    <tag k="name" v="Pottelberg"/>
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="4004678192" lat="50.5458080" lon="6.3707366">
+    <tag k="name" v="Müsauelsberg"/>
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="4004841072" lat="50.4737185" lon="4.9174241">
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="4004841224" lat="50.4746527" lon="4.9239868">
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="4015208520" lat="50.4677098" lon="4.1997878">
+    <tag k="ele" v="143"/>
+    <tag k="name" v="Terril d'Houssu"/>
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="4063416610" lat="49.5892924" lon="4.2817262">
+    <tag k="name" v="Mont des Buires"/>
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="4063416710" lat="49.6461769" lon="4.2464272">
+    <tag k="ele" v="195"/>
+    <tag k="name" v="Gros Mont"/>
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="4063416871" lat="49.6296153" lon="4.2314948">
+    <tag k="ele" v="195"/>
+    <tag k="name" v="Mont Châtré"/>
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="4063416872" lat="49.5991718" lon="4.2910882">
+    <tag k="ele" v="161"/>
+    <tag k="name" v="Mont d'Olivet"/>
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="4063416885" lat="49.6027278" lon="4.2682722">
+    <tag k="ele" v="166"/>
+    <tag k="name" v="Mont de la Cour"/>
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="4063416909" lat="49.5946746" lon="4.2766192">
+    <tag k="name" v="Mont de Chappes"/>
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="4063416938" lat="49.6173315" lon="4.2547174">
+    <tag k="ele" v="200"/>
+    <tag k="name" v="Mont de Chaumont"/>
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="4066986964" lat="49.6382993" lon="4.2673483">
+    <tag k="ele" v="138"/>
+    <tag k="name" v="Mont de Caillouet"/>
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="4066987101" lat="49.6383017" lon="4.2912559">
+    <tag k="ele" v="143"/>
+    <tag k="name" v="Mont Givron"/>
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="4066987208" lat="49.6251663" lon="4.3224924">
+    <tag k="ele" v="142"/>
+    <tag k="name" v="Mont d'Omont"/>
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="4066987262" lat="49.6756592" lon="4.2481217">
+    <tag k="ele" v="230"/>
+    <tag k="name" v="Mont Châtillon"/>
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="4066987295" lat="49.6656261" lon="4.2397537">
+    <tag k="ele" v="237"/>
+    <tag k="name" v="Gobert Mont"/>
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="4097471017" lat="50.2491602" lon="5.7382188">
+    <tag k="name" v="Baraque de Fraiture"/>
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="4130858478" lat="49.4223329" lon="3.8436655">
+    <tag k="ele" v="98"/>
+    <tag k="natural" v="peak"/>
+  </node>
+
+</osm>

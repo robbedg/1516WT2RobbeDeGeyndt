@@ -11,5 +11,7 @@
         <Canvas x:Name="Canvas1" >
             <Button x:Name="button" Content="Open" Canvas.Left="10" Canvas.Top="10" Width="75" Click="button_Click"/>
         </Canvas>
+        
+        
     </Grid>
 </Window>

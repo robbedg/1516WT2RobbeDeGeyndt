@@ -27,7 +27,7 @@ namespace Backend
         {
             _peeks = new List<Peek>();
 
-            file = new FileInfo(@"OSMrecources\switzerland.osm");
+            file = new FileInfo(@"OSMrecources\België.osm");
             xmlSource = new XmlOsmStreamSource(file.OpenRead());
             xmlSource.Initialize();
             read();
