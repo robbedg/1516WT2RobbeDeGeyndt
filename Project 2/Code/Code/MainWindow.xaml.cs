@@ -22,13 +22,16 @@ namespace Code
     /// <summary>
     /// Interaction logic for MainWindow.xaml
     /// </summary>
+
     public partial class MainWindow : Window
     {
         private Communication comm { get; set; }
+        private Dictionary<Model3D, string> markers = new Dictionary<Model3D, string>();
         public MainWindow()
         {
             InitializeComponent();
             comm = new Communication();
+            markers = comm.markers;
         }
 
         MeshGeometry3D MPane(float[,] values)
@@ -76,6 +79,7 @@ namespace Code
 
         private void Window_Loaded(object sender, RoutedEventArgs e)
         {
+            //GET MAP
             //Create pane
             GeometryModel3D Pane1 = new GeometryModel3D();
 
@@ -90,14 +94,36 @@ namespace Code
             Pane1.Material = new DiffuseMaterial(imagebrush);
             Pane1.BackMaterial = new DiffuseMaterial(new SolidColorBrush(Colors.LightGray));
 
+            //GET MARKERS
+
+            //LIGHTS
+
             DirectionalLight DirLicht1 = new DirectionalLight();
             DirLicht1.Color = Colors.White;
             DirLicht1.Direction = new Vector3D(-1, -1, -1);
 
             //REMOVE LATER
-            AmbientLight AmbLicht1 = new AmbientLight();
-            AmbLicht1.Color = Colors.Black;
+            DirectionalLight DirLicht2 = new DirectionalLight();
+            DirLicht2.Color = Colors.White;
+            DirLicht2.Direction = new Vector3D(1, 1, 1);
 
+            //MAP
+            Model3DGroup modelGroup = new Model3DGroup();
+            modelGroup.Children.Add(Pane1);
+            
+            foreach (Model3D x in markers.Keys)
+            {
+                modelGroup.Children.Add(x);
+            }
+
+            modelGroup.Children.Add(DirLicht1);
+            modelGroup.Children.Add(DirLicht2);
+
+            //Add to visual3d
+            ModelVisual3D visuals = new ModelVisual3D();
+            visuals.Content = modelGroup;
+
+            //Map
             PerspectiveCamera Camera1 = new PerspectiveCamera();
             Camera1.FarPlaneDistance = 1000000;
             Camera1.NearPlaneDistance = 1;
@@ -107,36 +133,53 @@ namespace Code
             Camera1.LookAt(new Point3D(301, 301, 0), 0d);
             Camera1.UpDirection = new Vector3D(0, 1, 0);
 
-            Model3DGroup modelGroup = new Model3DGroup();
-            modelGroup.Children.Add(Pane1);
-            modelGroup.Children.Add(DirLicht1);
-            //Remove LATER
-            modelGroup.Children.Add(AmbLicht1);
+            MainViewport.Camera = Camera1;
+            MainViewport.Children.Add(visuals);
+            MainViewport.CameraRotationMode = CameraRotationMode.Turntable;
+            MainViewport.ModelUpDirection = new Vector3D(0, 1, 0);
 
-            ModelVisual3D modelsVisual = new ModelVisual3D();
-            modelsVisual.Content = modelGroup;
+            MainViewport.Height = 500;
+            MainViewport.Width = 1000;
+            Canvas.SetTop(MainViewport, 0);
+            Canvas.SetLeft(MainViewport, 0);
+            this.Width = MainViewport.Width;
+            this.Height = MainViewport.Height + 100;
 
-            HelixViewport3D myViewport = new HelixViewport3D();
-            myViewport.Camera = Camera1;
-            myViewport.Children.Add(modelsVisual);
-            myViewport.CameraRotationMode = CameraRotationMode.Turntable;
-            myViewport.ModelUpDirection = new Vector3D(0, 1, 0);
-
-            Canvas1.Children.Add(myViewport);
-
-            myViewport.Height = 500;
-            myViewport.Width = 500;
-            Canvas.SetTop(myViewport, 0);
-            Canvas.SetLeft(myViewport, 0);
-            this.Width = myViewport.Width + 20;
-            this.Height = myViewport.Height + 50;
-
-            NameScope.SetNameScope(Canvas1, new NameScope());
+            //NameScope.SetNameScope(Canvas1, new NameScope());
         }
-
-        private void button_Click(object sender, RoutedEventArgs e)
+        //http://csharphelper.com/blog/2014/10/perform-hit-testing-in-a-3d-program-that-uses-wpf-xaml-and-c/
+        private void MainViewport_MouseDown(object sender, MouseButtonEventArgs e)
         {
+            // Get the mouse's position relative to the viewport.
+            Point mouse_pos = e.GetPosition(MainViewport);
 
+            // Perform the hit test.
+            HitTestResult result = VisualTreeHelper.HitTest(MainViewport, mouse_pos);
+
+            // Display information about the hit.
+            RayMeshGeometry3DHitTestResult mesh_result = result as RayMeshGeometry3DHitTestResult;
+
+            try
+            {
+                // Display the name of the model.
+                this.PeekName.Content = markers[mesh_result.ModelHit];
+
+                // Display more detail about the hit.
+                Console.WriteLine("Distance: " +
+                    mesh_result.DistanceToRayOrigin);
+                Console.WriteLine("Point hit: (" +
+                    mesh_result.PointHit.ToString() + ")");
+
+                Console.WriteLine("Triangle:");
+                MeshGeometry3D mesh = mesh_result.MeshHit;
+                Console.WriteLine("    (" +
+                    mesh.Positions[mesh_result.VertexIndex1].ToString() + ")");
+                Console.WriteLine("    (" +
+                    mesh.Positions[mesh_result.VertexIndex2].ToString() + ")");
+                Console.WriteLine("    (" +
+                    mesh.Positions[mesh_result.VertexIndex3].ToString() + ")");
+            }
+            catch { }
         }
     }
 }

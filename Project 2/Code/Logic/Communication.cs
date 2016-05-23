@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Media.Imaging;
+using System.Windows.Media.Media3D;
 
 namespace Logic
 {
@@ -16,6 +17,7 @@ namespace Logic
         private PeekFilter peekFilter { get; set; }
         public float[,] heights { get; set; }
         public float[] distances { get; set; }
+        public Dictionary<Model3D, string> markers { get; set; }
 
         public Communication()
         {
@@ -28,25 +30,13 @@ namespace Logic
 
             distances = GetDistances(coordinates);
 
+            //Create texture
             Texture texture = new Texture(heights);
 
+            //Create Peekobjects
             string[,] peeks = peekFilter.PeekArray(SRTM, coordinates, 300);
-
-            List<string> mountains = new List<string>();
-
-            for (int x = 0; x < 601; x++)
-            {
-                for (int y = 0; y < 601; y++)
-                {
-                    if (peeks[y, x] != null)
-                    {
-                        mountains.Add(peeks[y, x]);
-                    }
-                }
-            }
-
-            string test = "Test";
-
+            CreateMarkers cm = new CreateMarkers(heights, peeks, distances);
+            markers = cm.markers;
         }
 
         //https://stackoverflow.com/questions/4102520/how-to-transform-a-distance-from-degrees-to-metres

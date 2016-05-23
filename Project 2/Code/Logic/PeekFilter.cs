@@ -78,7 +78,7 @@ namespace Logic
                 int x = closestx.index - startx - 1;
 
                 //reverse y back
-                y = (range * 2) - y;
+                //y = (range * 2) - y;
 
                 peekMatrix[y, x] = peek.name;
             }
