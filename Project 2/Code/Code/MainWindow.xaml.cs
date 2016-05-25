@@ -163,21 +163,6 @@ namespace Code
             {
                 // Display the name of the model.
                 this.PeekName.Content = markers[mesh_result.ModelHit];
-
-                // Display more detail about the hit.
-                Console.WriteLine("Distance: " +
-                    mesh_result.DistanceToRayOrigin);
-                Console.WriteLine("Point hit: (" +
-                    mesh_result.PointHit.ToString() + ")");
-
-                Console.WriteLine("Triangle:");
-                MeshGeometry3D mesh = mesh_result.MeshHit;
-                Console.WriteLine("    (" +
-                    mesh.Positions[mesh_result.VertexIndex1].ToString() + ")");
-                Console.WriteLine("    (" +
-                    mesh.Positions[mesh_result.VertexIndex2].ToString() + ")");
-                Console.WriteLine("    (" +
-                    mesh.Positions[mesh_result.VertexIndex3].ToString() + ")");
             }
             catch { }
         }
