@@ -1,6 +1,6 @@
 ﻿namespace Game_AI
 {
-    partial class Form1
+    partial class Start
     {
         /// <summary>
         /// Required designer variable.
@@ -28,37 +28,33 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.bStart = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // pictureBox1
+            // bStart
             // 
-            this.pictureBox1.Location = new System.Drawing.Point(12, 12);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(350, 300);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
-            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
+            this.bStart.Location = new System.Drawing.Point(197, 12);
+            this.bStart.Name = "bStart";
+            this.bStart.Size = new System.Drawing.Size(75, 23);
+            this.bStart.TabIndex = 0;
+            this.bStart.Text = "Start";
+            this.bStart.UseVisualStyleBackColor = true;
+            this.bStart.Click += new System.EventHandler(this.bStart_Click);
             // 
-            // Form1
+            // Start
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(372, 322);
-            this.Controls.Add(this.pictureBox1);
-            this.Name = "Form1";
-            this.Text = "Form1";
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.ClientSize = new System.Drawing.Size(284, 261);
+            this.Controls.Add(this.bStart);
+            this.Name = "Start";
+            this.Text = "Start";
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
         #endregion
 
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Button bStart;
     }
 }
-

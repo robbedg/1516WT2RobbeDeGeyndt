@@ -12,10 +12,10 @@ using System.Windows.Forms;
 
 namespace Game_AI
 {
-    public partial class Form1 : Form
+    public partial class Game : Form
     {
         private GameLogic Logic { get; set; }
-        public Form1()
+        public Game()
         {
             InitializeComponent();
             Logic = new GameLogic(pictureBox1.Width, pictureBox1.Height);
