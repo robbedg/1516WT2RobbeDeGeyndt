@@ -12,16 +12,16 @@ namespace Game_AI
 {
     public partial class Start : Form
     {
-        public Start()
+        private GUIManager Manager { get; set; }
+        public Start(GUIManager manager)
         {
             InitializeComponent();
+            this.Manager = manager;
         }
 
         private void bStart_Click(object sender, EventArgs e)
         {
-            Game game = new Game();
-            game.Show();
-            this.Hide();
+            Manager.InitiateGame();
         }
     }
 }

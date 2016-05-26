@@ -7,6 +7,7 @@ using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
@@ -14,10 +15,17 @@ namespace Game_AI
 {
     public partial class Game : Form
     {
+        private GUIManager Manager { get; set; }
         private GameLogic Logic { get; set; }
-        public Game()
+        public Game(GUIManager manager)
         {
             InitializeComponent();
+            this.Manager = manager;
+            Initiate();
+        }
+
+        public void Initiate()
+        {
             Logic = new GameLogic(pictureBox1.Width, pictureBox1.Height);
             pictureBox1.ImageLocation = "board.bmp";
         }
@@ -62,6 +70,17 @@ namespace Game_AI
             pictureBox1.ImageLocation = "board.bmp";
             pictureBox1.Refresh();
             Logic.CheckWinner();
+
+            //TEMP
+            Logic.ComputerMove(Player.One);
+            pictureBox1.ImageLocation = "board.bmp";
+            pictureBox1.Refresh();
+            Logic.CheckWinner();
+        }
+
+        private void Game_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Manager.Dispose();
         }
     }
 }

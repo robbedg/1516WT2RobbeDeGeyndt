@@ -43,6 +43,7 @@
   <ItemGroup>
     <Compile Include="AI.cs" />
     <Compile Include="GameLogic.cs" />
+    <Compile Include="ProgressChecker.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
