@@ -1,6 +1,7 @@
 ﻿using Helper;
 using Objects;
 using System;
+using System.Collections.Concurrent;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -15,33 +16,27 @@ namespace Logic
         //https://msdn.microsoft.com/en-us/library/ee256691(v=vs.110).aspx
         public Move BestMove(Board board, Player player)
         {
+            ConcurrentQueue<Move> AllMoves = new ConcurrentQueue<Move>();
             Move bestMove = null;
 
-            //CancellationTokenSource cts = new CancellationTokenSource();
-            //ParallelOptions po = new ParallelOptions();
-            //po.CancellationToken = cts.Token;
-            //po.MaxDegreeOfParallelism = System.Environment.ProcessorCount;
 
-            foreach (int x in board.OpenColumns)
+            Parallel.ForEach(board.OpenColumns, x =>
             {
-                Board newBoard;
+               Board newBoard;
 
-                Console.WriteLine(x);
-                Console.WriteLine(board.Positions[x, 5]);
+               newBoard = board.Clone();
+               newBoard.depth = board.depth + 1;
 
-                newBoard = board.Clone();
-                newBoard.depth = board.depth + 1;
+               Move newMove = new Move();
+               newMove.X = x;
 
-                Move newMove = new Move();
-                newMove.X = x;
+               newBoard.Update(x, player);
 
-                newBoard.Update(x, player);
+               ProgressChecker pc = new ProgressChecker();
+               int[] results = pc.InARow(newBoard, player);
 
-                ProgressChecker pc = new ProgressChecker();
-                int[] results = pc.InARow(newBoard, player);
-
-                if (results[0] < 3 && results[1] < 3 && newBoard.OpenColumns.Count > 0 && newBoard.depth <=3)
-                {
+               if (results[0] < 3 && results[1] < 3 && newBoard.OpenColumns.Count > 0 && newBoard.depth <= 3)
+               {
                    Player counterPlayer;
 
                    if (player == Player.One)
@@ -58,15 +53,21 @@ namespace Logic
                }
                else
                {
-                    newMove.Rank = results[0] - results[1];
+                   newMove.Rank = results[0] - results[1];
                }
 
-                //Check witch move is better
-                if (bestMove == null || (newMove.Rank > bestMove.Rank))
-               {
-                   bestMove = newMove;
-               }
-           }
+                //Put move in que
+                AllMoves.Enqueue(newMove);
+            });
+            
+            foreach (Move move in AllMoves)
+            {
+                if ((bestMove == null) || bestMove.Rank < move.Rank)
+                {
+                    bestMove = move;
+                }
+            }
+
             return bestMove;
         }
     }

@@ -21,7 +21,16 @@ namespace Game_AI
 
         private void bStart_Click(object sender, EventArgs e)
         {
-            Manager.InitiateGame();
+            if (cbPlayer2.SelectedItem.Equals("User"))
+            {
+                Manager.IsClickable = true;
+                Manager.InitiateGame();
+            }
+            else if (cbPlayer2.SelectedItem.Equals("AI"))
+            {
+                Manager.IsClickable = false;
+                Manager.InitiateGame();
+            }
         }
     }
 }

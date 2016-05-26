@@ -11,7 +11,7 @@ namespace Visuals
 {
     public class CreateVisuals
     {
-        private Bitmap output { get; set; }
+        public Bitmap output { get; set; }
         public CreateVisuals(Board board, int width, int height)
         {
             output = new Bitmap(width, height);
@@ -53,33 +53,33 @@ namespace Visuals
             }
             #endregion
 
-            for (int x = 0; x < board.Positions.GetLength(0); x++)
-            {
-                for (int y = 0; y < board.Positions.GetLength(1); y++)
-                {
-                    if (board.Positions[x,y] != Player.Empty)
-                    {
-                        int startwidth = (int)((difwidth) * x);
-                        int startheight = (int)((difheight) * y);
-                        Player player = board.Positions[x, y];
+           for (int x = 0; x < board.Positions.GetLength(0); x++)
+           {
+              for (int y = 0; y < board.Positions.GetLength(1); y++)
+              {
+                  if (board.Positions[x, y] != Player.Empty)
+                  {
+                      int startwidth = (int)((difwidth) * x);
+                      int startheight = (int)((difheight) * y);
+                      Player player = board.Positions[x, y];
 
-                        for (int xp = startwidth; xp < startwidth + difwidth; xp++)
-                        {
-                            for (int yp = startheight; yp < startheight + difheight; yp++)
-                            {
-                                if (player == Player.One)
-                                {
-                                    temp.SetPixel(xp, yp, Color.Red);
-                                }
-                                else if (player == Player.Two)
-                                {
-                                    temp.SetPixel(xp, yp, Color.Blue);
-                                }
-                            }
-                        }
-                    }
-                }
-            }
+                      for (int xp = startwidth + 1; xp < startwidth + difwidth; xp++)
+                      {
+                          for (int yp = startheight + 1; yp < startheight + difheight; yp++)
+                          {
+                              if (player == Player.One)
+                              {
+                                  temp.SetPixel(xp, yp, Color.Red);
+                              }
+                              else if (player == Player.Two)
+                              {
+                                  temp.SetPixel(xp, yp, Color.Blue);
+                              }
+                          }
+                      }
+                  }
+              }
+           }
 
             #region reverse
             for (int x = 0; x < output.Width; x++)
@@ -91,7 +91,6 @@ namespace Visuals
             }
             #endregion
 
-            output.Save("board.bmp");
         }
     }
 }

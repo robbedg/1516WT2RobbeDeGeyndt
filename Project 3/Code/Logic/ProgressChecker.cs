@@ -1,6 +1,7 @@
 ﻿using Helper;
 using Objects;
 using System;
+using System.Collections.Concurrent;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -11,15 +12,15 @@ namespace Logic
     public class ProgressChecker
     {
         private int[] _InARow { get; set; }
-        private Queue<int> ThisPlayer { get; set; }
-        private Queue<int> CounterPlayer { get; set; }
+        private ConcurrentQueue<int> ThisPlayer { get; set; }
+        private ConcurrentQueue<int> CounterPlayer { get; set; }
 
         public ProgressChecker() { }
 
         public int[] InARow(Board board, Player player)
         {
-            ThisPlayer = new Queue<int>();
-            CounterPlayer = new Queue<int>();
+            ThisPlayer = new ConcurrentQueue<int>();
+            CounterPlayer = new ConcurrentQueue<int>();
 
             ThisPlayer.Enqueue(0);
             CounterPlayer.Enqueue(0);
