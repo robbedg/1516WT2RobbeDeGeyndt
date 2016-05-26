@@ -82,7 +82,7 @@ namespace Game_AI
                     pictureBox1.Refresh();
                     Logic.CheckWinner();
                 }
-                else
+                else if (!Logic.GameOver)
                 {
                     Logic.Retry = false;
                 }
@@ -97,6 +97,8 @@ namespace Game_AI
         {
             while(true)
             {
+                if (Logic.GameOver) break;
+
                 Logic.ComputerMove(Player.One);
                 pictureBox1.Image = Logic.Bitmap;
                 pictureBox1.Refresh();
