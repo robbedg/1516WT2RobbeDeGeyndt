@@ -13,6 +13,12 @@ namespace Logic
 {
     public class AI
     {
+        private int Steps { get; set; }
+        public AI(int steps)
+        {
+            Steps = steps;
+        }
+
         //https://msdn.microsoft.com/en-us/library/ee256691(v=vs.110).aspx
         public Move BestMove(Board board, Player player)
         {
@@ -35,7 +41,7 @@ namespace Logic
                ProgressChecker pc = new ProgressChecker();
                int[] results = pc.InARow(newBoard, player);
 
-               if (results[0] < 3 && results[1] < 3 && newBoard.OpenColumns.Count > 0 && newBoard.depth <= 3)
+               if (results[0] < 3 && results[1] < 3 && newBoard.OpenColumns.Count > 0 && newBoard.depth <= Steps)
                {
                    Player counterPlayer;
 

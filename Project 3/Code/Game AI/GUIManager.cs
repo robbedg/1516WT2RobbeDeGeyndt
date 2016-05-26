@@ -12,6 +12,8 @@ namespace Game_AI
         public Start Start { get; set; }
         public Game Game { get; set; }
         public bool IsClickable { get; set; }
+        public int StepsAI1 { get; set; }
+        public int StepsAI2 { get; set; }
 
         public GUIManager()
         {

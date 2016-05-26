@@ -27,9 +27,8 @@ namespace Game_AI
 
         public void Initiate()
         {
-            Logic = new GameLogic(pictureBox1.Width, pictureBox1.Height);
+            Logic = new GameLogic(pictureBox1.Width, pictureBox1.Height, Manager.StepsAI1, Manager.StepsAI2);
             pictureBox1.Image = Logic.Bitmap;
-            //pictureBox1.WaitOnLoad = true;
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
@@ -101,12 +100,14 @@ namespace Game_AI
                 Logic.ComputerMove(Player.One);
                 pictureBox1.Image = Logic.Bitmap;
                 pictureBox1.Refresh();
+                Logic.CheckWinner();
 
                 if (Logic.GameOver) break;
 
                 Logic.ComputerMove(Player.Two);
                 pictureBox1.Image = Logic.Bitmap;
-                pictureBox1.Update();
+                pictureBox1.Refresh();
+                Logic.CheckWinner();
 
                 if (Logic.GameOver) break;
             }

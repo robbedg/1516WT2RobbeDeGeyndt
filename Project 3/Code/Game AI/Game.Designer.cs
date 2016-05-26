@@ -48,9 +48,9 @@
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(9, 315);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(130, 13);
+            this.label1.Size = new System.Drawing.Size(303, 13);
             this.label1.TabIndex = 1;
-            this.label1.Text = "Click on the board to play.";
+            this.label1.Text = "Click on the board to play. (red is player one, blue is player two)";
             // 
             // Game
             // 

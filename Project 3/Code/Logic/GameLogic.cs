@@ -16,19 +16,19 @@ namespace Logic
         private int Width { get; set; }
         private int Height { get; set; }
         private Board Board { get; set; }
-        private AI ai { get; set; }
+        private AI ai1 { get; set; }
         private AI ai2 { get; set; }
         private CreateVisuals Visuals { get; set; }
         public Bitmap Bitmap { get; set; }
         public bool GameOver { get; set; }
         public bool Retry { get; set; }
-        public GameLogic(int width, int height)
+        public GameLogic(int width, int height, int stepsAI1, int stepsAI2)
         {
             this.Width = width;
             this.Height = height;
             Board = new Board();
-            ai = new AI();
-            ai2 = new AI();
+            ai1 = new AI(stepsAI1);
+            ai2 = new AI(stepsAI2);
             Visuals = new CreateVisuals(Board, width, height);
             Bitmap = Visuals.output;
         }
@@ -62,7 +62,7 @@ namespace Logic
 
             if (player != Player.Empty)
             {
-                MessageBox.Show(player.ToString() + " has won.", "Game over", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                MessageBox.Show("Player " + player.ToString() + " has won.", "Game over", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                 GameOver = true;
             }
         }
@@ -72,7 +72,7 @@ namespace Logic
             try
             {
                 Move move = new Move();
-                if (player == Player.One) move = ai.BestMove(Board, player);
+                if (player == Player.One) move = ai1.BestMove(Board, player);
                 else move = ai2.BestMove(Board, player);
                 Board.Update(move.X, player);
                 Visuals = new CreateVisuals(Board, Width, Height);
