@@ -6,11 +6,18 @@
         xmlns:local="clr-namespace:Code"
         mc:Ignorable="d"
         xmlns:HelixToolkit="clr-namespace:HelixToolkit.Wpf;assembly=HelixToolkit.Wpf"
-        Title="MainWindow" Height="600" Width="1000" Loaded="Window_Loaded">
+        Title="Map" Height="600" Width="1000" Loaded="Window_Loaded">
     <Grid>
         <Border Grid.Row="0" Grid.Column="0" Background="White" MouseDown="MainViewport_MouseDown">
             <HelixToolkit:HelixViewport3D Grid.Row="0" Grid.Column="0" Name="MainViewport" />
         </Border>
-        <Label x:Name="PeekName" Content="[Peek]" Margin="10,525,-10,-525" FontSize="20"/>
+        <Label x:Name="PeekName" Content="[Peek]" Margin="10,525,673,-525" FontSize="20"/>
+        <Label x:Name="label" Content="Noorderbreedte:" HorizontalAlignment="Left" Margin="250,534,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="tbNorth" HorizontalAlignment="Left" Height="23" Margin="354,538,0,0" TextWrapping="Wrap" Text="50,783346" VerticalAlignment="Top" Width="120" ToolTip="Noorderbreedte"/>
+        <Label x:Name="label1" Content="Oosterlengte:" HorizontalAlignment="Left" Margin="479,534,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="tbEast" HorizontalAlignment="Left" Height="23" Margin="566,538,0,0" TextWrapping="Wrap" Text="2,8079119" VerticalAlignment="Top" Width="120" ToolTip="Oosterlengte"/>
+        <Label x:Name="label2" Content="Range:" HorizontalAlignment="Left" Margin="691,534,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="tbRange" HorizontalAlignment="Left" Height="22" Margin="742,538,0,0" TextWrapping="Wrap" Text="300" VerticalAlignment="Top" Width="120" ToolTip="Range in meetpunten."/>
+        <Button x:Name="button" Content="Go" HorizontalAlignment="Left" Margin="880,538,0,0" VerticalAlignment="Top" Width="102" Height="22" Click="button_Click"/>
     </Grid>
 </Window>

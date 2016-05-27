@@ -1,8 +1,12 @@
 ﻿using HelixToolkit.Wpf;
 using Logic;
+using Microsoft.Win32;
+using Objects;
 using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
+using System.Net.Cache;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
@@ -30,8 +34,6 @@ namespace Code
         public MainWindow()
         {
             InitializeComponent();
-            comm = new Communication();
-            markers = comm.markers;
         }
 
         MeshGeometry3D MPane(float[,] values)
@@ -77,7 +79,7 @@ namespace Code
             return pane;
         }
 
-        private void Window_Loaded(object sender, RoutedEventArgs e)
+        private void Render()
         {
             //GET MAP
             //Create pane
@@ -90,7 +92,20 @@ namespace Code
 
             //paneMesh.Material
             ImageBrush imagebrush = new ImageBrush();
-            imagebrush.ImageSource = new BitmapImage(new Uri("texture.bmp", UriKind.Relative));
+
+            //Get Image
+            //https://stackoverflow.com/questions/8352787/how-to-free-the-memory-after-the-bitmapimage-is-no-longer-needed
+            BitmapImage image = new BitmapImage();
+            FileStream stream = File.OpenRead(@"texture.bmp");
+            image.BeginInit();
+            image.CacheOption = BitmapCacheOption.OnLoad;
+            image.StreamSource = stream;
+            image.EndInit();
+            stream.Close();
+            stream.Dispose();
+
+            //Set Image
+            imagebrush.ImageSource = image;
             Pane1.Material = new DiffuseMaterial(imagebrush);
             Pane1.BackMaterial = new DiffuseMaterial(new SolidColorBrush(Colors.LightGray));
 
@@ -110,7 +125,7 @@ namespace Code
             //MAP
             Model3DGroup modelGroup = new Model3DGroup();
             modelGroup.Children.Add(Pane1);
-            
+
             foreach (Model3D x in markers.Keys)
             {
                 modelGroup.Children.Add(x);
@@ -126,7 +141,7 @@ namespace Code
             //Map
             PerspectiveCamera Camera1 = new PerspectiveCamera();
             Camera1.FarPlaneDistance = 1000000;
-            Camera1.NearPlaneDistance = 1;
+            Camera1.NearPlaneDistance = 50;
             Camera1.FieldOfView = 45;
             Camera1.Position = new Point3D(301, 5000, 301);
             Camera1.LookDirection = new Vector3D(301, -5000, 301);
@@ -144,8 +159,32 @@ namespace Code
             Canvas.SetLeft(MainViewport, 0);
             this.Width = MainViewport.Width;
             this.Height = MainViewport.Height + 100;
+        }
 
-            //NameScope.SetNameScope(Canvas1, new NameScope());
+        private void Window_Loaded(object sender, RoutedEventArgs e)
+        {
+            //Get correct ASC document
+            MainViewport.Visibility = Visibility.Hidden;
+            OpenFileDialog ofd = new OpenFileDialog();
+            ofd.Filter = "ASC-files (*.asc)|*.asc|All Files (*.*)|*.*";
+            string path = "";
+
+            bool? ok = ofd.ShowDialog();
+
+            if (ok == true)
+            {
+                path = ofd.FileName;
+            }
+
+            try
+            {
+                comm = new Communication(path);
+            }
+            catch
+            {
+                MessageBox.Show("Invalid file.", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
+                this.Close();
+            }
         }
         //http://csharphelper.com/blog/2014/10/perform-hit-testing-in-a-3d-program-that-uses-wpf-xaml-and-c/
         private void MainViewport_MouseDown(object sender, MouseButtonEventArgs e)
@@ -165,6 +204,31 @@ namespace Code
                 this.PeekName.Content = markers[mesh_result.ModelHit];
             }
             catch { }
+        }
+
+        private void button_Click(object sender, RoutedEventArgs e)
+        {
+            try
+            {
+                ModelVisual3D model = (ModelVisual3D)MainViewport.Children.ElementAt(1);
+                model = null;
+                MainViewport.Children.RemoveAt(1);
+            }
+            catch { }
+
+            try
+            {
+                Coordinates coordinates = new Coordinates(float.Parse(tbNorth.Text), float.Parse(tbEast.Text));
+                comm.StartMap(coordinates, Int32.Parse(tbRange.Text));
+                markers = comm.markers;
+                MainViewport.Visibility = Visibility.Visible;
+                Render();
+                MainViewport.UpdateLayout();
+            }
+            catch
+            {
+                MessageBox.Show("You have entered an invalid value.", "Error", MessageBoxButton.OK, MessageBoxImage.Warning);
+            }
         }
     }
 }

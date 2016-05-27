@@ -19,19 +19,21 @@ namespace Logic
         public float[] distances { get; set; }
         public Dictionary<Model3D, string> markers { get; set; }
 
-        public Communication()
+        public Communication(string path)
         {
-            SRTM = new SRTMtile("srtm_37_02.asc");
+            SRTM = new SRTMtile(path);
             peekFilter = new PeekFilter();
+        }
 
-            Coordinates coordinates = new Coordinates(50.783346F, 2.8079119F);
+        public void StartMap(Coordinates coordinates, int range)
+        {
 
             heights = SRTM.GetHeights(300, coordinates);
 
             distances = GetDistances(coordinates);
 
             //Create texture
-            Texture texture = new Texture(heights);
+            Texture textures = new Texture(heights);
 
             //Create Peekobjects
             string[,] peeks = peekFilter.PeekArray(SRTM, coordinates, 300);

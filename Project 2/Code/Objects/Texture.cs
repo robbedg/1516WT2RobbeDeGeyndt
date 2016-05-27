@@ -11,7 +11,7 @@ namespace Objects
 {
     public class Texture
     {
-        public Bitmap bitmap { get; set; }
+        private Bitmap bitmap { get; set; }
         private float[,] heights { get; set; }
         private float max { get; set; }
         private float min { get; set; }
@@ -57,7 +57,7 @@ namespace Objects
                     }
                 }
             }
-            bitmap.Save("texture.bmp");
+            bitmap.Save(@"texture.bmp");
         }
 
         private void GetMaxMin()
