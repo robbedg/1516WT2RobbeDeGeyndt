@@ -28,7 +28,7 @@ namespace Logic
         public void StartMap(Coordinates coordinates, int range)
         {
 
-            heights = SRTM.GetHeights(300, coordinates);
+            heights = SRTM.GetHeights(range, coordinates);
 
             distances = GetDistances(coordinates);
 
@@ -36,7 +36,7 @@ namespace Logic
             Texture textures = new Texture(heights);
 
             //Create Peekobjects
-            string[,] peeks = peekFilter.PeekArray(SRTM, coordinates, 300);
+            string[,] peeks = peekFilter.PeekArray(SRTM, coordinates, range);
             CreateMarkers cm = new CreateMarkers(heights, peeks, distances);
             markers = cm.markers;
         }
